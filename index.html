@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>初见·苏师 | 2026级新生校园指南</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231d4ed8' d='M12 3 3 8v2.5c0 5.2 3.6 9.7 9 11.5 5.4-1.8 9-6.3 9-11.5V8z'/%3E%3Cpath fill='%23fff' d='M8 12.5l3 3 5-5'/%3E%3C/svg%3E">
+<script>
+/* 小慧头像兜底：PNG 加载失败时替换为手绘 SVG */
+window.__msvg=function(cls){return '<svg class="'+cls+'" viewBox="0 0 64 64" aria-label="小慧"><circle cx="16" cy="13" r="7.5" fill="#3a2e2a"/><circle cx="48" cy="13" r="7.5" fill="#3a2e2a"/><path d="M9 13l-2 8M55 13l2 8" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/><circle cx="32" cy="37" r="21" fill="#ffe3d3"/><path d="M11 37c0-13 9-23 21-23s21 10 21 23c-3-9-4-12-8-13 1 3 1 4 1 5-4-6-9-9-14-9s-11 3-14 9c0-1 0-2 1-5-4 1-5 4-8 13z" fill="#3a2e2a"/><circle cx="25" cy="38" r="2.4" fill="#3a2e2a"/><circle cx="39" cy="38" r="2.4" fill="#3a2e2a"/><circle cx="20" cy="43" r="2.6" fill="#fca5a5" opacity=".7"/><circle cx="44" cy="43" r="2.6" fill="#fca5a5" opacity=".7"/><path d="M27 45q5 4 10 0" stroke="#3a2e2a" stroke-width="2" fill="none" stroke-linecap="round"/></svg>';};
+window.__merr=function(img){img.outerHTML=window.__msvg(img.className);};
+</script>
+<style>
+:root{
+  --bg:#eef4fd;--card:#ffffff;--line:#dbe6f5;--ink:#1c2b3a;--muted:#5b6b7c;
+  --brand:#1d4ed8;--brand-2:#1e40af;--brand-soft:#e3edff;
+  --accent:#f59e0b;--accent-2:#ea580c;--accent-soft:#fff7e8;
+  --ok:#16a34a;--bad:#dc2626;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;min-height:100vh}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+.view{display:none;min-height:100vh}
+.view.active{display:block;animation:fadeUp .38s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+hl{color:var(--brand);font-weight:700}
+wn{color:var(--bad);font-weight:700}
+button{font-family:inherit}
+img{user-select:none}
+
+/* ============ 第一层：封面页 ============ */
+.cover{position:relative;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;
+  background:linear-gradient(180deg,#d8e8ff 0%,#e9f2ff 52%,#f6faff 100%)}
+.cover.active{display:flex}
+.cover-leave{opacity:0;transform:scale(1.04);transition:opacity .36s ease,transform .36s ease;pointer-events:none}
+.cover-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.cloud{animation:drift 16s ease-in-out infinite alternate}
+.cloud.c2{animation-duration:21s;animation-delay:-6s}
+.cloud.c3{animation-duration:26s;animation-delay:-12s}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.cover-inner{position:relative;z-index:2;padding:0 24px;max-width:640px}
+.cover-kicker{display:inline-block;font-size:12px;letter-spacing:4px;color:var(--brand);border:1px solid #b9cff5;border-radius:999px;padding:5px 16px;background:rgba(255,255,255,.72);margin-bottom:18px}
+.cover h1{font-size:46px;font-weight:900;letter-spacing:8px;line-height:1.2;
+  background:linear-gradient(120deg,var(--brand-2) 20%,var(--brand) 55%,var(--accent-2) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.cover h1 .dot{color:var(--accent);-webkit-text-fill-color:var(--accent)}
+.cover-sub{margin-top:10px;font-size:17px;letter-spacing:7px;color:var(--brand-2);font-weight:700}
+.cover-desc{margin:16px auto 0;color:var(--muted);font-size:14px;max-width:420px}
+.btn-enter{margin-top:30px;display:inline-flex;align-items:center;gap:10px;border:none;cursor:pointer;
+  background:linear-gradient(120deg,var(--accent) 0%,var(--accent-2) 100%);color:#fff;
+  font-size:16px;font-weight:800;letter-spacing:3px;padding:15px 40px;border-radius:999px;
+  box-shadow:0 10px 26px rgba(234,88,12,.32);transition:transform .18s,box-shadow .18s}
+.btn-enter:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(234,88,12,.4)}
+.btn-enter svg{transition:transform .18s}
+.btn-enter:hover svg{transform:translateX(4px)}
+.cover-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;color:var(--brand);opacity:.65;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+.cover-mascot{position:absolute;right:18px;bottom:54px;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.cover-mascot img,.cover-mascot svg{height:150px;width:auto;filter:drop-shadow(0 8px 16px rgba(30,64,175,.22))}
+.cm-tip{background:#fff;border:1px solid var(--line);border-radius:12px 12px 2px 12px;padding:6px 12px;font-size:12px;color:var(--brand-2);box-shadow:0 4px 14px rgba(30,64,175,.1)}
+
+/* ============ 公共顶栏 ============ */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;color:var(--brand-2)}
+.brand .logo{width:26px;height:26px}
+.topbar .src{font-size:12px;color:var(--muted)}
+
+/* ============ 第二层：导览界面 ============ */
+.agent-card{margin:20px 0 6px;display:flex;gap:14px;align-items:center;border-radius:20px;padding:18px 20px;color:#fff;
+  background:linear-gradient(120deg,var(--brand-2) 0%,var(--brand) 60%,#3b82f6 100%);
+  box-shadow:0 12px 28px rgba(29,78,216,.24);position:relative;overflow:hidden}
+.agent-card::after{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.08)}
+.ac-img{height:104px;width:auto;flex:none;position:relative;z-index:1;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}
+.ac-txt{position:relative;z-index:1;min-width:0}
+.ac-name{font-size:18px;font-weight:900;letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.ac-tag{font-size:10px;font-weight:700;background:var(--accent);color:#fff;border-radius:6px;padding:2px 7px;letter-spacing:1px}
+.ac-desc{font-size:13px;opacity:.92;margin:6px 0 10px}
+.ac-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ac-chip{font-size:12px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 11px;cursor:pointer}
+.ac-chip:hover{background:rgba(255,255,255,.28)}
+.ac-go{background:#fff;color:var(--brand);border:none;border-radius:999px;font-size:13px;font-weight:800;padding:8px 20px;cursor:pointer}
+.sec-title{display:flex;align-items:baseline;gap:10px;margin:22px 0 12px;font-size:19px;font-weight:900;color:var(--brand-2)}
+.sec-title span{font-size:12px;color:var(--muted);font-weight:400}
+.mod-grid{display:grid;grid-template-columns:1fr;gap:13px;padding-bottom:26px}
+.mod-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;cursor:pointer;
+  display:flex;gap:13px;align-items:flex-start;transition:transform .16s,border-color .16s,box-shadow .16s;text-decoration:none;color:inherit}
+.mod-card:hover{transform:translateY(-3px);border-color:var(--brand);box-shadow:0 8px 20px rgba(29,78,216,.1)}
+.mod-card .ic{flex:none;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--brand-soft)}
+.mod-card h3{font-size:16px;font-weight:800}
+.mod-card p{font-size:13px;color:var(--muted);margin-top:2px}
+.mod-card .ixtag{display:inline-block;margin-top:8px;font-size:11px;color:var(--accent-2);background:var(--accent-soft);border:1px solid #fde3b8;border-radius:999px;padding:2px 10px;font-weight:700}
+footer{padding:24px 0 34px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+footer .note{margin-top:5px;font-size:11px;opacity:.75}
+
+/* ============ 第三层：分区详情 ============ */
+.d-head{display:flex;align-items:center;gap:12px;padding:20px 0 6px}
+.back{flex:none;width:38px;height:38px;border-radius:11px;background:#fff;border:1px solid var(--line);color:var(--brand);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.back:hover{background:var(--brand-soft)}
+.d-head h2{font-size:22px;font-weight:900;color:var(--brand-2)}
+.d-sub{font-size:13px;color:var(--muted);margin-top:1px}
+.sec-block{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;margin-top:13px}
+.sec-block h3{font-size:16px;font-weight:800;display:flex;align-items:center;gap:8px;margin-bottom:4px;color:var(--ink)}
+.sec-block .lead{font-size:14px;color:var(--muted);margin-bottom:12px}
+.points{display:grid;grid-template-columns:1fr;gap:10px}
+.point{background:#f6f9fe;border:1px solid var(--line);border-radius:12px;padding:11px 13px;font-size:14px}
+.point b{color:var(--brand);font-weight:700}
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;table-layout:fixed;font-size:14px;margin-top:4px}
+.tbl th,.tbl td{padding:10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:#f2f6fc;font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td{border-bottom:none}
+.tel-line{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;flex-wrap:wrap}
+.tel-line:last-child{border-bottom:none}
+.copy{flex:none;font-size:12px;color:var(--brand);border:1px solid #b9cff5;background:var(--brand-soft);border-radius:8px;padding:4px 12px;cursor:pointer}
+
+/* 互动卡片（橙色主题） */
+.ix-card{background:linear-gradient(180deg,#fffdf6 0%,#fff 70%);border:1.5px solid #fcd34d;border-radius:18px;padding:18px;margin-top:14px;box-shadow:0 6px 18px rgba(245,158,11,.1)}
+.ix-card .ix-head{display:flex;align-items:center;gap:9px;margin-bottom:4px}
+.ix-pill{font-size:11px;font-weight:800;color:#fff;background:linear-gradient(120deg,var(--accent),var(--accent-2));border-radius:999px;padding:3px 10px;letter-spacing:2px}
+.ix-card h3{font-size:17px;font-weight:900;color:var(--accent-2)}
+.ix-card .ix-sub{font-size:13px;color:var(--muted);margin-bottom:12px}
+
+/* 闯关 */
+.quest{position:relative;padding-left:30px}
+.quest::before{content:"";position:absolute;left:11px;top:14px;bottom:14px;width:0;border-left:2px dashed #f3c26b}
+.qnode{position:relative;margin-bottom:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 14px;transition:border-color .2s,background .2s}
+.qnode .qn-dot{position:absolute;left:-26px;top:14px;width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid #f3c26b;color:var(--accent-2);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.qnode.done{border-color:#fdba3b;background:#fffcf2}
+.qnode.done .qn-dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.qn-t{font-weight:800;font-size:15px;margin-bottom:5px}
+.qn-tasks{font-size:13.5px;color:var(--muted);line-height:1.8}
+.qn-btn{margin-top:9px;font-size:13px;font-weight:700;border-radius:9px;border:1.5px solid var(--accent);background:#fff;color:var(--accent-2);padding:6px 16px;cursor:pointer;transition:all .15s}
+.qn-btn:hover{background:var(--accent-soft)}
+.qn-btn[disabled]{border-color:var(--ok);color:var(--ok);background:#f0fdf4;cursor:default}
+.quest-bar{font-size:13px;color:var(--muted);margin-bottom:12px}
+.quest-bar b{color:var(--accent-2)}
+.quest-win{display:none;text-align:center;padding:16px 8px 6px}
+.quest-win.show{display:block;animation:pop .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.quest-win .badge{width:74px;height:74px;margin:0 auto 8px}
+.quest-win .wt{font-size:18px;font-weight:900;color:var(--accent-2);letter-spacing:2px}
+.quest-win .ws{font-size:13px;color:var(--muted)}
+
+/* 测验通用 */
+.quiz-q{margin-bottom:15px}
+.quiz-q .q{font-size:15px;font-weight:700;margin-bottom:9px}
+.qopts{display:flex;flex-direction:column;gap:8px}
+.qopt{padding:10px 13px;border:1.5px solid var(--line);border-radius:12px;font-size:14px;cursor:pointer;transition:border-color .15s,background .15s;background:#fff}
+.qopt:hover{border-color:var(--accent)}
+.qopt.sel-ok{border-color:var(--ok);background:#ecfdf3}
+.qopt.sel-bad{border-color:var(--bad);background:#fef2f2}
+.qopt.sel-pick{border-color:var(--accent);background:var(--accent-soft)}
+.qopt.disabled{pointer-events:none;opacity:.78}
+.qfb{font-size:13px;margin-top:8px;padding:9px 12px;border-radius:10px;display:none}
+.qfb.show{display:block}
+.qfb.ok{background:#ecfdf3;color:#166534}
+.qfb.bad{background:#fef2f2;color:#991b1b}
+.quiz-out{display:none;margin-top:6px;border-radius:14px;padding:15px;background:var(--accent-soft);border:1px solid #fde3b8;font-size:14px}
+.quiz-out.show{display:block;animation:pop .4s cubic-bezier(.2,1.4,.4,1)}
+.quiz-out .stars{font-size:19px;letter-spacing:4px;color:var(--accent);font-weight:900}
+.quiz-out b{color:var(--accent-2)}
+.redo{margin-top:10px;font-size:13px;font-weight:700;border:1.5px solid var(--accent);background:#fff;color:var(--accent-2);border-radius:9px;padding:6px 16px;cursor:pointer}
+
+/* 地点速查 */
+.map-tabs{display:flex;gap:8px;margin-bottom:12px}
+.mtab{flex:1;text-align:center;font-size:14px;font-weight:700;padding:9px 0;border-radius:11px;border:1.5px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:all .15s}
+.mtab.on{border-color:var(--accent);color:var(--accent-2);background:var(--accent-soft)}
+.pins{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pin{display:flex;align-items:center;gap:8px;text-align:left;font-size:13.5px;font-weight:700;padding:10px 12px;border-radius:11px;border:1px solid var(--line);background:#fff;cursor:pointer;transition:all .15s;color:var(--ink)}
+.pin:hover{border-color:var(--accent)}
+.pin.on{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-2)}
+.pin svg{flex:none}
+.pin-card{display:none;margin-top:12px;background:#fff;border:1px solid #fde3b8;border-radius:13px;padding:13px 14px;font-size:14px}
+.pin-card.show{display:block;animation:fadeUp .25s ease}
+.pin-card .pc-t{font-weight:800;color:var(--accent-2);margin-bottom:4px}
+
+/* 食堂 */
+.rand-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(120deg,var(--accent),var(--accent-2));color:#fff;border:none;border-radius:12px;padding:11px 22px;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 6px 16px rgba(245,158,11,.3)}
+.rand-out{margin-top:12px;background:#fff;border:1px solid #fde3b8;border-radius:12px;padding:13px 15px;font-size:14.5px;display:none}
+.rand-out.show{display:block;animation:pop .35s cubic-bezier(.2,1.4,.4,1)}
+.rand-out b{color:var(--accent-2)}
+.taste-row{display:flex;gap:8px;margin:4px 0 10px;flex-wrap:wrap}
+.taste{flex:1;min-width:90px;text-align:center;font-size:14px;font-weight:700;padding:10px 0;border-radius:11px;border:1.5px solid var(--line);background:#fff;cursor:pointer;color:var(--muted);transition:all .15s}
+.taste.on,.taste:hover{border-color:var(--accent);color:var(--accent-2);background:var(--accent-soft)}
+
+/* 心情晴雨表 */
+.moods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mood{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:14px 6px;text-align:center;cursor:pointer;transition:all .15s}
+.mood:hover{border-color:var(--accent);transform:translateY(-2px)}
+.mood .mi{width:44px;height:44px;margin:0 auto 6px}
+.mood .mt{font-size:14px;font-weight:800}
+.mood-out{display:none;margin-top:13px;background:#fff;border:1px solid #fde3b8;border-radius:13px;padding:14px;font-size:14px}
+.mood-out.show{display:block;animation:fadeUp .3s ease}
+.hotline{display:inline-flex;align-items:center;gap:6px;margin-top:8px;background:#eff6ff;border:1px solid #b9cff5;color:var(--brand);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700}
+
+/* ============ 小慧聊天 ============ */
+.chat-wrap{max-width:640px;margin:0 auto;height:100vh;display:flex;flex-direction:column;background:var(--bg)}
+.chat-head{display:flex;align-items:center;gap:11px;padding:12px 14px;background:#fff;border-bottom:1px solid var(--line)}
+.chat-ava{width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);overflow:hidden;flex:none;display:flex;align-items:center;justify-content:center}
+.chat-ava img,.chat-ava svg{width:100%;height:100%;object-fit:cover}
+.ch-name{font-weight:900;font-size:16px;color:var(--brand-2)}
+.ch-status{font-size:11.5px;color:var(--ok);display:flex;align-items:center;gap:4px}
+.ch-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.chat-body{flex:1;overflow-y:auto;padding:14px 14px 6px}
+.msg{display:flex;gap:8px;margin-bottom:13px;align-items:flex-start}
+.msg .avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;background:#fff;border:1px solid var(--line);flex:none}
+.msg .avatar img,.msg .avatar svg{width:100%;height:100%;object-fit:cover}
+.bubble{max-width:80%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.75;word-break:break-word}
+.msg.bot .bubble{background:#fff;border:1px solid var(--line);border-top-left-radius:4px}
+.msg.user{flex-direction:row-reverse}
+.msg.user .bubble{background:var(--brand);color:#fff;border-top-right-radius:4px}
+.bubble .rbox{margin-top:9px;padding-top:8px;border-top:1px dashed var(--line)}
+.bubble .rt{font-size:12px;color:var(--muted);margin-bottom:6px}
+.rchip{display:inline-block;font-size:12.5px;color:var(--brand);background:var(--brand-soft);border:1px solid #b9cff5;border-radius:999px;padding:3px 11px;margin:0 6px 6px 0;cursor:pointer}
+.warn-card{border:1px solid #fcd34d;background:#fffbeb;border-radius:10px;padding:9px 11px;margin-top:9px;font-size:13px;color:#92400e;line-height:1.7}
+.care-card{border:1px solid #bfdbfe;background:#eff6ff;border-radius:10px;padding:9px 11px;margin-top:9px;font-size:13px;color:#1e40af;line-height:1.8}
+.typing{display:inline-flex;gap:4px;padding:4px 2px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#b6c6dd;animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+@keyframes tp{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+.chat-chips{display:flex;gap:7px;padding:8px 14px;overflow-x:auto;background:var(--bg);flex:none}
+.chat-chips::-webkit-scrollbar{display:none}
+.cchip{flex:none;font-size:12.5px;color:var(--brand-2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;cursor:pointer;white-space:nowrap}
+.cchip:hover{border-color:var(--brand)}
+.chat-input{display:flex;gap:9px;padding:11px 14px 14px;background:#fff;border-top:1px solid var(--line);flex:none}
+.chat-input input{flex:1;min-width:0;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 15px;font-size:15px;outline:none}
+.chat-input input:focus{border-color:var(--brand)}
+.chat-input button{flex:none;background:var(--brand);color:#fff;border:none;border-radius:12px;padding:0 22px;font-size:15px;font-weight:800;cursor:pointer}
+.chat-input button:disabled{opacity:.5}
+
+/* ============ 图集 & 灯箱 & 工具 ============ */
+.topbar{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,rgba(238,244,253,.97),rgba(238,244,253,.86));-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:10px}
+.gal figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:zoom-in;transition:transform .16s,box-shadow .16s}
+.gal figure:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(29,78,216,.13)}
+.gal img{display:block;width:100%;height:116px;object-fit:cover;background:#eef4fd}
+.gal figcaption{font-size:11.5px;color:var(--muted);padding:6px 8px;line-height:1.45;border-top:1px solid var(--line);background:#fbfdff}
+.gal.tall img{height:168px}
+.gal-note{font-size:12px;color:var(--muted);margin-top:8px}
+.sec-block h3 .cap{font-size:11px;color:var(--muted);font-weight:400;margin-left:2px}
+.lbox{position:fixed;inset:0;z-index:120;background:rgba(10,20,38,.88);display:none;align-items:center;justify-content:center;padding:16px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.lbox.show{display:flex;animation:fadeUp .22s ease}
+.lbox img{max-width:96vw;max-height:84vh;border-radius:12px;box-shadow:0 24px 70px rgba(0,0,0,.55);background:#0b1526}
+.lbox .lcap{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:7px 16px;border-radius:999px;max-width:90vw;text-align:center}
+.lbox .lx{position:absolute;top:16px;right:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+.lbox .lx:hover{background:rgba(255,255,255,.32)}
+.step{display:flex;gap:9px;margin:6px 0;font-size:14px}
+.step .sn{flex:none;width:21px;height:21px;border-radius:50%;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.stepp{margin-top:10px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.to-top{position:fixed;right:16px;bottom:18px;z-index:60;width:44px;height:44px;border-radius:50%;border:none;background:var(--brand);color:#fff;box-shadow:0 8px 22px rgba(29,78,216,.36);cursor:pointer;display:none;align-items:center;justify-content:center}
+.to-top.show{display:flex}
+@media (min-width:768px){
+  .cover h1{font-size:64px;letter-spacing:12px}
+  .cover-sub{font-size:20px}
+  .mod-grid{grid-template-columns:repeat(2,1fr)}
+  .points{grid-template-columns:1fr 1fr}
+  .pins{grid-template-columns:repeat(3,1fr)}
+  .cover-mascot img,.cover-mascot svg{height:190px}
+  .cover-mascot{right:6%;bottom:70px}
+  .gal{grid-template-columns:repeat(4,1fr)}
+  .gal img{height:132px}
+  .gal.tall img{height:186px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ===== 图文内联（figs）· 地图 · 去AI味微调 ===== */
+.figs{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:13px 0 3px}
+.figs.n1{grid-template-columns:1fr}
+.figs.n3{grid-template-columns:repeat(3,1fr)}
+.figs figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:zoom-in;transition:box-shadow .18s,transform .18s}
+.figs figure:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,40,80,.1)}
+.figs img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#eef3fb}
+.figs figcaption{font-size:11.5px;color:var(--muted);padding:6px 8px;text-align:center;line-height:1.45}
+.body-txt{font-size:14px;color:var(--ink);line-height:1.78}
+.map-hero{margin:0 0 12px}
+.map-hero img{display:block;width:100%;border-radius:12px;border:1px solid var(--line);cursor:zoom-in}
+.map-cap{font-size:11.5px;color:var(--muted);text-align:center;margin-top:6px}
+.sec-block{box-shadow:0 1px 2px rgba(20,40,80,.03)}
+.mod-card{box-shadow:0 1px 2px rgba(20,40,80,.03)}
+.agent-card{background:linear-gradient(135deg,#233f97 0%,#1d4ed8 100%);box-shadow:0 10px 24px rgba(29,78,216,.2)}
+.cover h1{letter-spacing:6px}
+.sec-block h3{letter-spacing:.2px}
+</style>
+</head>
+<body>
+
+<!-- ================= 第一层：封面页 ================= -->
+<section class="view cover active" id="view-cover">
+  <svg class="cover-bg" viewBox="0 0 800 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <!-- 云 -->
+    <g class="cloud" fill="#ffffff" opacity=".75"><ellipse cx="150" cy="120" rx="52" ry="20"/><ellipse cx="195" cy="112" rx="38" ry="16"/><ellipse cx="115" cy="112" rx="30" ry="13"/></g>
+    <g class="cloud c2" fill="#ffffff" opacity=".6"><ellipse cx="620" cy="170" rx="58" ry="21"/><ellipse cx="668" cy="160" rx="36" ry="15"/></g>
+    <g class="cloud c3" fill="#ffffff" opacity=".5"><ellipse cx="420" cy="80" rx="44" ry="15"/><ellipse cx="458" cy="73" rx="28" ry="12"/></g>
+    <!-- 太阳 -->
+    <circle cx="700" cy="90" r="34" fill="#fcd34d" opacity=".55"/>
+    <circle cx="700" cy="90" r="46" fill="none" stroke="#fcd34d" stroke-width="2" opacity=".3" stroke-dasharray="4 8"/>
+    <!-- 主教学楼（钟楼） -->
+    <g stroke="#1d4ed8" fill="#1d4ed8" opacity=".16">
+      <rect x="330" y="480" width="140" height="240" fill-opacity=".12" stroke-width="2.5"/>
+      <path d="M320 480 L400 415 L480 480 Z" fill-opacity=".1" stroke-width="2.5"/>
+      <circle cx="400" cy="455" r="14" fill="none" stroke-width="2.5"/>
+      <path d="M400 447v8l6 4" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="350" y="510" width="18" height="26" fill-opacity=".18"/><rect x="391" y="510" width="18" height="26" fill-opacity=".18"/><rect x="432" y="510" width="18" height="26" fill-opacity=".18"/>
+      <rect x="350" y="560" width="18" height="26" fill-opacity=".18"/><rect x="391" y="560" width="18" height="26" fill-opacity=".18"/><rect x="432" y="560" width="18" height="26" fill-opacity=".18"/>
+      <rect x="386" y="640" width="28" height="80" fill-opacity=".2"/>
+      <rect x="310" y="700" width="180" height="20" fill-opacity=".14"/>
+    </g>
+    <!-- 两侧配楼 -->
+    <g stroke="#1d4ed8" fill="#1d4ed8" opacity=".1">
+      <rect x="150" y="560" width="130" height="160" stroke-width="2.5"/>
+      <rect x="170" y="585" width="20" height="20"/><rect x="205" y="585" width="20" height="20"/><rect x="240" y="585" width="20" height="20"/>
+      <rect x="170" y="625" width="20" height="20"/><rect x="205" y="625" width="20" height="20"/><rect x="240" y="625" width="20" height="20"/>
+      <rect x="520" y="540" width="130" height="180" stroke-width="2.5"/>
+      <rect x="540" y="565" width="20" height="20"/><rect x="575" y="565" width="20" height="20"/><rect x="610" y="565" width="20" height="20"/>
+      <rect x="540" y="605" width="20" height="20"/><rect x="575" y="605" width="20" height="20"/><rect x="610" y="605" width="20" height="20"/>
+    </g>
+    <!-- 树 -->
+    <g opacity=".2" fill="#1d4ed8"><circle cx="95" cy="660" r="26"/><rect x="91" y="680" width="8" height="40"/><circle cx="705" cy="650" r="30"/><rect x="701" y="672" width="8" height="48"/></g>
+    <!-- 操场跑道弧线 -->
+    <g fill="none" stroke="#f59e0b" opacity=".38" stroke-width="3">
+      <path d="M-40 830 Q400 720 840 830"/><path d="M-40 858 Q400 748 840 858"/><path d="M-40 886 Q400 776 840 886"/>
+    </g>
+    <g fill="none" stroke="#f59e0b" opacity=".2" stroke-width="2" stroke-dasharray="10 14">
+      <path d="M-40 844 Q400 734 840 844"/><path d="M-40 872 Q400 762 840 872"/>
+    </g>
+    <!-- 漂浮的书本 -->
+    <g stroke="#1d4ed8" fill="#ffffff" opacity=".5" stroke-width="2">
+      <g transform="rotate(-12 120 300)"><rect x="100" y="290" width="40" height="28" rx="3"/><path d="M120 290v28"/></g>
+      <g transform="rotate(9 660 330)"><rect x="640" y="316" width="40" height="28" rx="3"/><path d="M660 316v28"/></g>
+      <g transform="rotate(-6 250 200)"><rect x="232" y="188" width="36" height="24" rx="3"/><path d="M250 188v24"/></g>
+    </g>
+    <!-- 飞鸟 -->
+    <g stroke="#1e40af" stroke-width="2.4" fill="none" opacity=".4" stroke-linecap="round">
+      <path d="M520 130 q7 -8 14 0 q7 -8 14 0"/><path d="M580 105 q6 -7 12 0 q6 -7 12 0"/>
+    </g>
+  </svg>
+
+  <div class="cover-inner">
+    <div class="cover-kicker">JSNU · 江苏师范大学</div>
+    <h1>初见<span class="dot">·</span>苏师</h1>
+    <div class="cover-sub">2026 级新生校园指南</div>
+    <p class="cover-desc">九大分区全攻略，每个分区藏着一个小互动；<br>还有校园向导「小慧」随时解答你的问题。</p>
+    <button class="btn-enter" id="btn-enter">进入指南
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <div class="cover-mascot">
+    <div class="cm-tip">我是小慧，你的校园向导～</div>
+    <img src="file:///c:/Users/联想/.trae-cn/attachments/681bea84-cdf8-47a7-8c72-499b4d950aa2_92ad72cf-f568-4da0-917d-98cb95c48c4d_825dcf7ce1a3d9bbc57a483888d10ecd.png" alt="小慧" onerror="__merr(this)">
+  </div>
+
+  <div class="cover-hint">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+  </div>
+</section>
+
+<!-- ================= 第二层：导览界面 ================= -->
+<section class="view" id="view-nav">
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1d4ed8" d="M12 3 3 8v2.5c0 5.2 3.6 9.7 9 11.5 5.4-1.8 9-6.3 9-11.5V8z"/><path fill="#fff" d="M8 12.5l3 3 5-5"/></svg>
+        初见·苏师
+      </div>
+      <span class="src">2026级新生校园指南</span>
+    </header>
+
+    <div class="agent-card">
+      <div class="ac-txt">
+        <div class="ac-name">小慧 <span class="ac-tag">校园智能体</span></div>
+        <div class="ac-desc">官方指南全库问答：快递、军训、食堂、奖助贷、心理热线……问啥都接得住，答不上绝不瞎编。</div>
+        <div class="ac-chips" id="ac-chips"></div>
+        <button class="ac-go" id="ac-go">开始提问 →</button>
+      </div>
+      <img class="ac-img" src="file:///c:/Users/联想/.trae-cn/attachments/681bea84-cdf8-47a7-8c72-499b4d950aa2_92ad72cf-f568-4da0-917d-98cb95c48c4d_825dcf7ce1a3d9bbc57a483888d10ecd.png" alt="小慧" onerror="__merr(this)">
+    </div>
+
+    <div class="sec-title">九大分区 <span>每个分区都藏了一个小互动，点进去解锁</span></div>
+    <div class="mod-grid" id="mod-grid"></div>
+
+    <footer>
+      初见·苏师 · 新生校园指南（演示版）
+      <div class="note">内容整理自江苏师范大学官方微信公众号「初见·苏师」系列推文，仅供学习演示；正式使用请以学校最新通知为准。</div>
+    </footer>
+  </div>
+</section>
+
+<!-- ================= 第三层：分区详情 ================= -->
+<section class="view" id="view-detail">
+  <div class="wrap">
+    <div class="d-head">
+      <button class="back" id="btn-back" aria-label="返回导览">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      </button>
+      <div>
+        <h2 id="d-title">分区</h2>
+        <div class="d-sub" id="d-sub"></div>
+      </div>
+    </div>
+    <div id="d-ix"></div>
+    <div id="d-body" style="padding-bottom:30px"></div>
+  </div>
+</section>
+
+<!-- ================= 小慧聊天 ================= -->
+<section class="view" id="view-chat">
+  <div class="chat-wrap">
+    <div class="chat-head">
+      <button class="back" id="btn-chat-back" aria-label="返回导览">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="chat-ava"><img src="file:///c:/Users/联想/.trae-cn/attachments/681bea84-cdf8-47a7-8c72-499b4d950aa2_92ad72cf-f568-4da0-917d-98cb95c48c4d_825dcf7ce1a3d9bbc57a483888d10ecd.png" alt="小慧" onerror="__merr(this)"></div>
+      <div>
+        <div class="ch-name">小慧</div>
+        <div class="ch-status">在线 · 初见苏师知识库</div>
+      </div>
+    </div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-chips" id="chat-chips"></div>
+    <div class="chat-input">
+      <input id="chat-q" type="text" placeholder="问小慧：快递 / 军训 / 助学贷款 / 心理热线…" autocomplete="off">
+      <button id="chat-send">发送</button>
+    </div>
+  </div>
+</section>
+
+<div class="lbox" id="lbox" aria-hidden="true"><button class="lx" id="lbox-x" aria-label="关闭">×</button><img id="lbox-img" src="" alt=""><div class="lcap" id="lbox-cap"></div></div>
+<button class="to-top" id="to-top" aria-label="回到顶部"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script>
+/* ===== 工具 ===== */
+var el=function(id){return document.getElementById(id);};
+var MASCOT='file:///c:/Users/联想/.trae-cn/attachments/681bea84-cdf8-47a7-8c72-499b4d950aa2_92ad72cf-f568-4da0-917d-98cb95c48c4d_825dcf7ce1a3d9bbc57a483888d10ecd.png';
+function mimg(cls){return '<img class="'+cls+'" src="'+MASCOT+'" alt="小慧" onerror="__merr(this)">';}
+
+/* ===== 线性 SVG 图标 ===== */
+function icon(k){
+  var s='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">';
+  var m={
+    p:'<path d="M6 8V7a6 6 0 0 1 12 0v1"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 13h6M9 16.5h4"/>',
+    army:'<path d="M12 3l7 2.5v5c0 4.6-3 8.8-7 10.5-4-1.7-7-5.9-7-10.5v-5z"/><path d="M12 8v5M9.5 10.5h5"/>',
+    l:'<path d="M12 21s-6.5-5.3-6.5-10a6.5 6.5 0 0 1 13 0c0 4.7-6.5 10-6.5 10z"/><circle cx="12" cy="10.5" r="2.4"/>',
+    f:'<path d="M4 11h16c0 4.4-3.6 8-8 8s-8-3.6-8-8z"/><path d="M15 3.5l3 4.5M9 3.5l3 4.5"/>',
+    s:'<path d="M12 5.5C10 4 7 3.5 4 4v14c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V4c-3-.5-6 0-8 1.5z"/><path d="M12 5.5v14"/>',
+    a:'<path d="M12 21s-7.5-4.6-9-9c-.8-2.6.8-5.5 3.5-5.5 2 0 3.6 1.2 5.5 3.4 1.9-2.2 3.5-3.4 5.5-3.4 2.7 0 4.3 2.9 3.5 5.5-1.5 4.4-9 9-9 9z"/>',
+    m:'<circle cx="9" cy="9" r="3.6"/><path d="M9 2.5v2M3 9h2M4.5 4.5l1.4 1.4M13.5 4.5l-1.4 1.4"/><path d="M9.5 21h8a3.5 3.5 0 0 0 .6-6.9 5 5 0 0 0-9.7-1.3A3.2 3.2 0 0 0 9.5 21z"/>',
+    e:'<path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/>',
+    hui:'<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/>'
+  };
+  return s+(m[k]||m.e)+'</svg>';
+}
+
+/* ===== 九大分区数据（硬信息照官方原文收录） ===== */
+var MODULES=[
+{
+  id:'prepare',name:'入学准备',icon:'p',ixt:'报到闯关路线图',
+  desc:'车票预约、行李清单、收心建议、开学防骗',
+  blocks:[
+    {t:'info',h:'火车票：新生可提前预约',lead:'12306 已为 2026 级新生开通预约购票绿色通道，符合条件的新生可在发车前 <hl>17~20 天</hl>提前预约，按规定享受学生优惠票价，铁路部门优先保障新生购票需求。',pts:[
+      {b:'预约窗口：',s:'<hl>8 月 1 日—30 日</hl>，在铁路 12306 APP「学生预约购票服务」中新增新生预约功能。'}
+    ]},
+    {t:'figs',h:'火车票 · 新生预约购票',lead:'12306 官方操作示意。',n:2,a:[
+      {s:'img/image71.jpg',c:'火车票学生预约 · 官方指引'},
+      {s:'img/image72.jpg',c:'12306 新生预约购票页面'}
+    ]},
+    {t:'points',h:'行李装箱清单',lead:'按三大类收拾，报到前对照检查：',pts:[
+      {b:'证件材料：',s:'录取通知书；身份证、户口本及复印件（多备几份，报到、办卡都能用）；一寸/二寸证件照（存好电子版）；档案袋（密封完好，切勿私自拆开）；党团组织关系证明；贫困生资助材料（如需申请助学金）；银行卡（学校发放的专属卡或常用储蓄卡）。'},
+      {b:'生活用品：',s:'衣物鞋帽（夏秋交替备几件薄外套，鞋子 2—3 双）；床上用品、床帘、雨伞、基础收纳与清洁用具；3C 认证插排、充电器、充电宝、笔记本电脑、U 盘等小型低压设备。'},
+      {b:'军训用品：',s:'驱蚊（花露水、风油精、驱蚊液）、防晒（防晒霜、防晒喷雾、冰凉贴）、运动鞋垫、大容量水杯、小风扇、小包纸巾/湿巾。'},
+      {b:'禁带提示：',s:'<wn>电煮锅、电水壶、吹风机、电热毯等大功率发热电器，以及三无、改装电器、劣质插排不能携带。</wn>'}
+    ]},
+    {t:'figs',h:'行李收纳指南 · 图解',lead:'对照官方「行李收纳指南」逐项打点，别落下重要物品与证件。',n:3,a:[
+      {s:'img/image73.jpg',c:'行李收纳指南 · 图1'},{s:'img/image74.jpg',c:'行李收纳指南 · 图2'},{s:'img/image75.jpg',c:'行李收纳指南 · 图3'},
+      {s:'img/image76.jpg',c:'行李收纳指南 · 图4'},{s:'img/image77.jpg',c:'行李收纳指南 · 图5'},{s:'img/image78.jpg',c:'行李收纳指南 · 图6'},
+      {s:'img/image79.jpg',c:'行李收纳指南 · 图7'},{s:'img/image80.jpg',c:'行李收纳指南 · 图8'},{s:'img/image81.jpg',c:'行李收纳指南 · 图9'},
+      {s:'img/image82.jpg',c:'行李收纳指南 · 图10'},{s:'img/image83.jpg',c:'行李收纳指南 · 图11'},{s:'img/image84.jpg',c:'行李收纳指南 · 图12'}
+    ]},
+    {t:'points',h:'收心建议：从假期模式切换到开学模式',pts:[
+      {b:'倒推法调整作息：',s:'每天将入睡时间提前 30 分钟，同步调整起床时间；睡前 1 小时关闭电子设备。'},
+      {b:'白天多活动：',s:'每天至少 40 分钟户外活动，规律锻炼帮助找回状态。'},
+      {b:'制定短期目标：',s:'比如每周 50 个新单词、每天运动打卡，写成便签贴书桌前，完成一项标记一项。'}
+    ]},
+    {t:'points',h:'开学防骗三原则',lead:'新学期骗局高发，记住这三条就够：',pts:[
+      {b:'贷款不收费：',s:'国家助学贷款办理<wn>不收取任何费用</wn>，凡是「先交手续费/保证金」的都是骗子。'},
+      {b:'刷单即诈骗：',s:'点赞刷单、充值返利全是陷阱，找兼职走正规渠道。'},
+      {b:'不共享屏幕：',s:'教育部门和银行工作人员<wn>不会通过共享手机屏幕</wn>帮你操作贷款；不点陌生链接，有疑问直接联系辅导员或学校核实。'}
+    ]}
+  ]
+},
+{
+  id:'army',name:'军训攻略',icon:'army',ixt:'防暑自测 · 耐热指数',
+  desc:'时间安排、纪律要求、五大防护全解析',
+  blocks:[
+    {t:'tbl',h:'军训时间安排',lead:'2026 级新生军训定于 <hl>9 月 16 日—9 月 30 日</hl>进行，实行错峰错时作息。',head:['项目','安排'],rows:[
+      ['训练日期','9 月 16 日—9 月 30 日；9 月 25 日（中秋节）当天休息一天'],
+      ['上午','8:10（8:20）—11:10（11:20）'],
+      ['下午','14:10—17:10'],
+      ['动态调整','训练期间将根据天气等实际情况，适时调整训练时间和训练计划']
+    ]},
+    {t:'figs',h:'军训现场',n:2,a:[
+      {s:'img/image101.jpg',c:'军训攻略 · 图解'},
+      {s:'img/image102.jpg',c:'军训现场'}
+    ]},
+    {t:'points',h:'纪律要求',pts:[
+      {b:'分类登记：',s:'按学院（部）要求完成分类登记（全训 / 伴训 / 缓训 / 免训），服从编排。'},
+      {b:'严格出勤：',s:'训练期间不得无故缺勤、不得擅自离开训练场地。'},
+      {b:'特殊情况：',s:'第一时间向教官或辅导员报备。'}
+    ]},
+    {t:'points',h:'防护 01 · 科学补给',pts:[
+      {b:'切勿空腹参训：',s:'早餐一定要吃，谨防低血糖。'},
+      {b:'饮食搭配：',s:'荤素搭配，多摄入肉蛋奶补充蛋白质，搭配新鲜果蔬。'},
+      {b:'补水原则：',s:'出汗多时少量多次，可选淡盐水、电解质水；切忌一次性大量饮水，不要直接饮用冰水。'}
+    ]},
+    {t:'figs',n:2,a:[{s:'img/image103.jpg',c:'科学补给 · 图解'}]},
+    {t:'points',h:'防护 02 · 预防中暑',pts:[
+      {b:'关注天气：',s:'徐州昼夜温差较大，根据气温适时增减衣物。'},
+      {b:'警惕信号：',s:'出现头晕、心慌、出虚汗、恶心、四肢乏力等中暑前兆，立刻停止训练，转移至阴凉通风处休息，补充电解质并物理降温。'},
+      {b:'情况严重：',s:'第一时间联系校医处置。'}
+    ]},
+    {t:'figs',n:2,a:[{s:'img/image104.jpg',c:'预防中暑 · 图解'}]},
+    {t:'points',h:'防护 03 · 避免损伤',pts:[
+      {b:'训练前热身：',s:'充分活动手腕、脚踝、腰腿等关节，能有效降低运动损伤风险。'},
+      {b:'受伤处理：',s:'崴脚、肌肉拉伤立即停止训练，<wn>切勿揉搓、热敷</wn>受伤部位。'},
+      {b:'训练后恢复：',s:'别立刻蹲坐，缓步走动调整呼吸；适度拉伸预防抽筋；晚间热水泡脚、轻柔按摩。'}
+    ]},
+    {t:'figs',n:2,a:[{s:'img/image105.jpg',c:'避免损伤 · 图解'}]},
+    {t:'points',h:'防护 04 · 作息调适',pts:[
+      {b:'调整心态：',s:'高强度训练下疲惫属正常，不必过度焦虑，给自己积极的心理暗示。'},
+      {b:'保证睡眠：',s:'保证夜间睡眠质量，合理利用午休养精蓄锐。'}
+    ]},
+    {t:'figs',n:2,a:[{s:'img/image106.jpg',c:'作息调适 · 图解'}]},
+    {t:'points',h:'防护 05 · 物资备齐',pts:[
+      {b:'鞋垫：',s:'柔软吸汗的军训鞋垫，预防磨出水泡。'},
+      {b:'衣物：',s:'贴身衣物每日更换，保持干爽。'},
+      {b:'防晒防蚊：',s:'防晒霜提前涂、定时补涂；备好花露水、驱蚊液。'},
+      {b:'洗浴：',s:'训练后不要立刻冲冷水澡，优先温水洗浴。'}
+    ]}
+  ]
+},
+{
+  id:'life',name:'校园生活',icon:'l',ixt:'地点速查地图',
+  desc:'快递外卖、商超、洗浴、交通、线上平台、医疗',
+  blocks:[
+    {t:'points',h:'校园商超',pts:[
+      {b:'泉山校区：',s:'罗森便利店（美术学院与音乐学院之间）、惠选超市（一食堂对面、泉北快递中心旁）、七星连锁超市（一组团旁、校医院对面）、西校区超市（中俄学院附近）、集好购超市（34 号宿舍楼下）；另有智能外卖柜。'},
+      {b:'云龙校区：',s:'超市位于学生公寓 1-3# 楼侧，内部设有打印店。'},
+      {b:'文庭雅苑：',s:'文享学街（商业楼一层）有 24 小时便利店、水吧、水果店；生活全能小集市（地下负二层）集合快递驿站、生活超市、自助洗衣房、干洗店、文印室；研享食集（商业楼二层）为风味美食集合地。'}
+    ]},
+    {t:'figs',h:'校园商超与生活配套实景',n:3,a:[
+      {s:'img/image1.jpg',c:'智能外卖柜'},
+      {s:'img/image2.jpg',c:'罗森便利店'},
+      {s:'img/image3.jpg',c:'惠选超市'},
+      {s:'img/image4.jpg',c:'七星连锁超市'},
+      {s:'img/image5.jpg',c:'云龙校区超市内部'},
+      {s:'img/image6.jpg',c:'生活全能小集市（地下负二层）'},
+      {s:'img/image7.jpg',c:'生活全能小集市（地下负二层）'},
+      {s:'img/image8.jpg',c:'生活全能小集市（地下负二层）'},
+      {s:'img/image9.jpg',c:'生活全能小集市（地下负二层）'},
+      {s:'img/image10.jpg',c:'生活全能小集市（地下负二层）'},
+      {s:'img/image11.jpg',c:'文庭雅苑'}
+    ]},
+    {t:'points',h:'洗浴与后勤缴费',pts:[
+      {b:'公共浴室：',s:'泉山与云龙校区均配有公共浴室，恒温热水淋浴及独立更衣区，常规开放 <hl>12:00-22:40</hl>；公用吹风机、洗衣机及部分洗鞋机各生活区覆盖。'},
+      {b:'水电缴费与报修：',s:'通过「江苏师大后勤」公众号「微服务」菜单办理。'},
+      {b:'文庭雅苑：',s:'公寓客服 <hl>7:00-22:00</hl>，24 小时服务热线 <hl>0516-80801339</hl>。'}
+    ]},
+    {t:'tbl',h:'校内外交通',head:['方式','信息'],rows:[
+      ['校内循环巴士','每日 <hl>6:50—21:30</hl>；票价 <hl>1 元/人次</hl>，可办月票享九折；支持微信、支付宝扫码支付。'],
+      ['泉山·地铁','3 号线「师范大学站」临近东南门（2 号门），直达徐州火车站；6 号线「铜山中医院站」临近南门（3 号门），直达徐州东站和新城区奥体中心。'],
+      ['泉山·公交','东门（1 号门）外「江苏师范大学」站：11附、19 路通往市中心及老火车站；72 路（含夜班）直达高铁东站；95 路连接铜山新区与市区。'],
+      ['云龙·地铁','紧邻 2 号线「师大云龙校区站」，步行约 1 分钟；往徐州东站乘 2 号线换乘 1 号线，往徐州火车站 2 号线直达。'],
+      ['云龙·公交','「江苏师范大学云龙校区站」：11附、19 路通往市中心及老火车站；70 路衔接城南片区与主城区；64 路直达客运北站；8 路、49 路串联老城区与宣武商圈。'],
+      ['文庭雅苑·地铁','紧邻 6 号线「徐州市中医院站」，可直达徐州东站；往徐州火车站乘 6 号线换乘 3 号线。']
+    ]},
+    {t:'figs',h:'校内循环巴士',n:2,a:[
+      {s:'img/image12.jpg',c:'校内循环巴士'},
+      {s:'img/image13.jpg',c:'校内循环巴士'}
+    ]},
+    {t:'tbl',h:'文庭雅苑 ↔ 泉山 校际通勤班车（2026—2027 学年秋季学期）',head:['方向','发车时间'],rows:[
+      ['文庭雅苑 → 泉山','上午 7:00、7:10、8:55；中午 13:00；下午 18:00'],
+      ['泉山 → 文庭雅苑','中午 12:15；下午 17:30、17:35；晚上 21:10']
+    ]},
+    {t:'points',h:'线上平台：办事掌上办',pts:[
+      {b:'「爱师大」APP：',s:'校园移动门户，工作台汇集课表查询、费用缴纳、校园卡服务、自习预约、绩点查询、校园导航等功能。电脑端下载：https://i-star.jsnu.edu.cn/'},
+      {b:'校园官网：',s:'使用爱师大账号密码登录，支持选课、课表查看、考试安排等教务功能，并可访问知网、万方等校内免费学术资源。'}
+    ]},
+    {t:'figs',h:'线上平台 · 实拍',n:3,a:[
+      {s:'img/image14.jpg',c:'「爱师大」平台'},
+      {s:'img/image15.jpg',c:'爱师大手机端 APP 界面'},
+      {s:'img/image16.jpg',c:'爱师大手机端 APP 界面'},
+      {s:'img/image17.jpg',c:'爱师大手机端 APP 界面'}
+    ]},
+    {t:'points',h:'「一站式」学生社区与暖心服务',pts:[
+      {b:'四个站点：',s:'泉南、泉西、泉北（34B/34C 栋学生宿舍一楼）、云龙（4 号楼一楼），工作日 <hl>8:00-20:30</hl> 开放。'},
+      {b:'可办理：',s:'证件补办、医保报销、成绩单打印、学籍业务，并提供场地预约、政策咨询、法律援助等服务。'},
+      {b:'微光后勤温馨驿站：',s:'泉山校区南部蜜雪冰城对面，定期免费衣物缝补、自行车维修、眼镜清洗，关注「江苏师大后勤」公众号预约。'}
+    ]},
+    {t:'figs',h:'四个「一站式」站点实拍',n:2,a:[
+      {s:'img/image18.jpg',c:'泉南「一站式」学生社区'},
+      {s:'img/image19.jpg',c:'泉西「一站式」学生社区'},
+      {s:'img/image20.jpg',c:'泉北「一站式」学生社区'},
+      {s:'img/image21.jpg',c:'云龙「一站式」学生社区'}
+    ]},
+    {t:'figs',h:'微光后勤温馨驿站',n:2,a:[
+      {s:'img/image22.jpg',c:'微光后勤温馨驿站'},
+      {s:'img/image23.jpg',c:'微光后勤温馨驿站'}
+    ]},
+    {t:'points',h:'校园就医',lead:'在校生病不用慌：就近处理，按需转诊，报销留好单据。',pts:[
+      {b:'泉山校医院：',s:'泉山校区设有校医院，可处理门诊、常见病与外伤处置；就诊请携带<hl>校园卡 / 身份证</hl>。'},
+      {b:'云龙校区：',s:'云龙校区设医疗服务点，日常小病可就近处理；需要转诊时按校医院指引前往对口医院。'},
+      {b:'医保报销：',s:'参保学生门诊需转诊单、发票明细、病历、身份证正反面复印件；住院需住/出院证明（加盖医院公章）、发票及明细、银行卡复印件、身份证正反面复印件。泉山到泉南「一站式」<hl>117 室</hl>、云龙到 4 号楼 317 办公室办理（工作日 <hl>12:00—18:00</hl>）。'},
+      {b:'紧急情况：',s:'突发不适或外伤，第一时间联系辅导员或宿舍管理员；紧急医疗拨打 <hl>120</hl>。'}
+    ]},
+    {t:'figs',h:'泉山校医院',n:2,a:[{s:'img/image24.jpg',c:'泉山校医院'}]}
+  ]
+},
+{
+  id:'food',name:'食堂美食',icon:'f',ixt:'今天吃什么 + 口味推荐',
+  desc:'泉山云龙八大食堂 + 校外美食',
+  blocks:[
+    {t:'info',h:'一食堂（人气食堂）',lead:'环境新潮；招牌鸭血粉丝汤鲜香嫩滑，老生最爱朱家小馆辣肉面，还有蜜雪冰城。'},
+    {t:'figs',n:2,a:[
+      {s:'img/image28.jpg',c:'一食堂'},{s:'img/image29.jpg',c:'一食堂'},{s:'img/image30.jpg',c:'一食堂'},{s:'img/image31.jpg',c:'一食堂'}
+    ]},
+    {t:'info',h:'二食堂（玉泉河餐厅）',lead:'本土地锅鸡、0090 汉堡、饸饹面、呼拉面、匠心卤、辣椒炒肉、麻辣拌、黄焖鸡、港式烧腊；<hl>设有共享厨房</hl>，周内及周末可预约（以后勤公众号预约推文为准）。'},
+    {t:'figs',n:2,a:[{s:'img/image32.jpg',c:'二食堂（玉泉河餐厅）'},{s:'img/image33.jpg',c:'二食堂（玉泉河餐厅）'}]},
+    {t:'info',h:'三食堂（性价比之王）',lead:'燃面、脆皮烤鸭、胖姐米线、瓦罐汤、麻辣烫；<hl>「五元套餐」一荤一素、米饭不限量</hl>；也设有共享厨房。'},
+    {t:'figs',n:3,a:[
+      {s:'img/image34.jpg',c:'三食堂'},{s:'img/image35.jpg',c:'三食堂'},{s:'img/image36.jpg',c:'三食堂'},{s:'img/image37.jpg',c:'三食堂'},
+      {s:'img/image38.jpg',c:'三食堂'},{s:'img/image39.jpg',c:'三食堂'},{s:'img/image40.jpg',c:'三食堂'},{s:'img/image41.jpg',c:'三食堂'}
+    ]},
+    {t:'info',h:'忆江南美食广场',lead:'粉红色调三层空间；称重自选轻食、拌饭、麻辣香锅、石锅、馄饨水饺、兰州拉面、特色小炒，还有麦当劳。'},
+    {t:'figs',n:2,a:[{s:'img/image42.jpg',c:'忆江南美食广场'}]},
+    {t:'info',h:'五食堂（明星餐厅）',lead:'升级改造中；炸串拌饭、把子肉、肉夹馍、米线、油饼母鸡汤，将新增大碗面、轻食、小碗菜。'},
+    {t:'figs',n:2,a:[{s:'img/image43.jpg',c:'五食堂'}]},
+    {t:'info',h:'六食堂（玉兰融合餐厅）',lead:'曾荣登最美食堂榜单；自选宝宝餐、陕西面馆、手工馄饨等 15 个特色窗口，还有瑞幸咖啡与现做糕点。'},
+    {t:'figs',n:2,a:[
+      {s:'img/image44.jpg',c:'六食堂（玉兰融合餐厅）'},{s:'img/image45.jpg',c:'六食堂（玉兰融合餐厅）'},
+      {s:'img/image46.jpg',c:'六食堂（玉兰融合餐厅）'},{s:'img/image47.jpg',c:'六食堂（玉兰融合餐厅）'}
+    ]},
+    {t:'info',h:'七食堂（自习人食堂）',lead:'精品自选菜、军歌家膳、西北面食、徐州米线、江西小炒、瓦香鸡、铁板厨房、千里香馄饨；幸运咖、蜜城之恋、柿子下午茶、宿莱堡、张亮麻辣烫等连锁品牌。'},
+    {t:'figs',n:2,a:[{s:'img/image48.jpg',c:'七食堂'}]},
+    {t:'info',h:'云龙学生食堂（A 级认证）',lead:'精品快餐、徐州风味米线、烤肉饭、麻辣烫、兰州拉面；二楼特色小炒、烤鸭饭、猪脚饭、卤肉；身处市中心价格亲民。'},
+    {t:'figs',n:2,a:[
+      {s:'img/image49.jpg',c:'云龙学生食堂'},{s:'img/image50.jpg',c:'云龙学生食堂'},{s:'img/image51.jpg',c:'云龙学生食堂'},{s:'img/image52.jpg',c:'云龙学生食堂'}
+    ]},
+    {t:'info',h:'校外美食图鉴',lead:'师大步行街烟火气十足；铜山万达热闹丰富；市中心富国街、彭城广场特色小吃、火锅烤肉一应俱全。'},
+    {t:'figs',n:2,a:[
+      {s:'img/image53.jpg',c:'校外美食图鉴'},{s:'img/image54.jpg',c:'校外美食图鉴'},{s:'img/image55.jpg',c:'校外美食图鉴'},{s:'img/image56.jpg',c:'校外美食图鉴'}
+    ]}
+  ]
+},
+{
+  id:'study',name:'学习通关',icon:'s',ixt:'学习状态自查',
+  desc:'图书馆、自习空间、学习平台、学习方法',
+  blocks:[
+    {t:'info',h:'图书馆',pts:[
+      {b:'三馆分布：',s:'泉山敬文图书馆邻近东门，馆藏最全；牛山图书馆紧邻泉西宿舍区，自习座位充足；云龙智华图书馆服务云龙校区。'},
+      {b:'开放时间：',s:'各馆日常开放 <hl>7:00—22:00</hl>，节假日安排以官方通知为准。'},
+      {b:'借阅规则：',s:'本科生可借 <hl>15 册</hl>、借期 <hl>30 天</hl>，可线上续借一次、最长不超 60 天，支持跨校区通借通还；期刊、古籍、工具书仅限馆内阅览。'}
+    ]},
+    {t:'figs',h:'图书馆实拍',n:2,a:[
+      {s:'img/image57.jpg',c:'图书馆'},{s:'img/image58.jpg',c:'图书馆'},{s:'img/image59.jpg',c:'图书馆'},{s:'img/image60.jpg',c:'图书馆'}
+    ]},
+    {t:'points',h:'自习空间去哪找',pts:[
+      {b:'「一站式」学生社区：',s:'泉南、泉西宿舍片区，泉北 34 号楼 B、C 栋及云龙校区，开放 <hl>8:00-20:30</hl>；配套公共自习区、研习空间，可在「爱师大 APP—智慧学工—场馆预约」提前预约。'},
+      {b:'空教室：',s:'东教区（7#、8#、17#）、西教区（31#、42# 等）开放无课空教室；文庭雅苑学生公寓配套自习教室；可通过教学资源查询预约平台查看空闲教室。'}
+    ]},
+    {t:'figs',h:'「一站式」自习空间',n:2,a:[{s:'img/image61.jpg',c:'「一站式」学生社区'},{s:'img/image62.jpg',c:'「一站式」学生社区'}]},
+    {t:'points',h:'常用学习平台',pts:[
+      {b:'教务系统：',s:'学号 + 密码登录；可选课（体育、博雅等）、查询成绩与课表。'},
+      {b:'爱师大 APP：',s:'「学在师大」查课表、期末成绩；「科学研究」提供文献查询工具。'},
+      {b:'网课平台：',s:'中国大学 MOOC（icourse163.org）汇集本校课程视频；学习通用于课件、签到、章节任务与作业考试。'}
+    ]},
+    {t:'figs',h:'常用学习平台 · 界面（一一对应）',n:3,a:[
+      {s:'img/image63.jpg',c:'① 爱师大 APP'},
+      {s:'img/image64.jpg',c:'① 爱师大 APP'},
+      {s:'img/image65.jpg',c:'① 爱师大 APP'},
+      {s:'img/image66.jpg',c:'② 网课平台'}
+    ]},
+    {t:'points',h:'实用学习方法',pts:[
+      {b:'课前预习：',s:'10 分钟浏览章节标题和重点概念，标记疑问。'},
+      {b:'课堂听课：',s:'优先前排，手机收起来；记框架、例题和老师反复强调的重点；保存课程 PPT。'},
+      {b:'课后复盘：',s:'当天整理笔记、复盘重难点，别全积压到期末。'},
+      {b:'主动答疑：',s:'难点疑点及时请教任课教师或学长学姐。'}
+    ]},
+    {t:'points',h:'学风与荣誉',pts:[
+      {b:'学风活动：',s:'「暖冬晨读」「春晓晨读」；学风建设「十佳百优」、立德树人奖学金、朱敬文奖学金；「十佳班级」「苏师榜样」等评选表彰。'}
+    ]},
+    {t:'figs',h:'浓厚师大学风（补充）',n:2,a:[
+      {s:'img/image67.jpg',c:'浓厚师大学风'},{s:'img/image68.jpg',c:'浓厚师大学风'},{s:'img/image69.jpg',c:'浓厚师大学风'},{s:'img/image70.jpg',c:'浓厚师大学风'}
+    ]}
+  ]
+},
+{
+  id:'aid',name:'奖助政策',icon:'a',ixt:'资助适配自查',
+  desc:'绿色通道、奖助贷勤减免补全解读',
+  blocks:[
+    {t:'points',h:'入学无忧 · 绿色通道',pts:[
+      {b:'先报到、后缴费：',s:'报到前暂未凑齐学费、住宿费，可登录「爱师大」客户端「欢迎新同学」板块线上申请绿色通道；入学后学校将开展家庭经济困难学生认定。'}
+    ]},
+    {t:'figs',h:'绿色通道 · 图解',n:2,a:[{s:'img/image25.jpg',c:'入学无忧 · 绿色通道'}]},
+    {t:'points',h:'奖 · 以奖促学',pts:[
+      {b:'多层次奖学金体系：',s:'表彰勤学善思、品行端正、综合素养突出的优秀学子。'}
+    ]},
+    {t:'figs',h:'奖 · 以奖促学（多元激励）',n:2,a:[{s:'img/image26.jpg',c:'奖 · 以奖促学，多元激励'}]},
+    {t:'points',h:'贷 · 国家助学贷款（重点）',pts:[
+      {b:'办理时间与地点：',s:'每年 <hl>7 月—9 月</hl>，前往<hl>户籍所在地教育局学生资助中心</hl>办理，政府主导、财政贴息，通过国家开发银行、中国银行等金融机构发放。'},
+      {b:'额度：',s:'本科生每人每年最高 <hl>20000 元</hl>，研究生每人每年最高 <hl>25000 元</hl>。'},
+      {b:'期限与利息：',s:'贷款期限为学制加 15 年、最长不超过 22 年；在校期间利息全部由国家财政承担。'},
+      {b:'用途：',s:'优先缴纳学费、住宿费，也可补贴日常生活开支。'}
+    ]},
+    {t:'points',h:'勤 · 勤工助学',pts:[
+      {b:'岗位与薪酬：',s:'面向大二及以上学生，图书馆助理、行政助理等岗位；薪酬 <hl>14 元/小时</hl>，每月不超 <hl>40 小时</hl>，单月上限 <hl>560 元</hl>。'},
+      {b:'申请方式：',s:'学有余力的建档学生可登录「爱师大」APP 申请。'}
+    ]},
+    {t:'points',h:'减、免、补',pts:[
+      {b:'学费减免：',s:'残疾学生、孤儿、因公牺牲人员子女、重病学生等特殊困难类型学生可申请。'},
+      {b:'临时困难补助：',s:'在校遇突发疾病、家庭变故等意外可申请，全年畅通快速审批通道。'},
+      {b:'服兵役教育资助：',s:'应征入伍、招收为军士、退役复学（入学）学生享受学费补偿、贷款代偿或学费减免；本科生每年最高 20000 元，研究生 25000 元。'},
+      {b:'基层就业学费补偿：',s:'应届毕业生到苏北基层岗位连续就业满 <hl>36 个月</hl>，可申请学费补偿贷款代偿。'}
+    ]},
+    {t:'figs',h:'助 · 以助扶志，护航成长',n:2,a:[{s:'img/image27.jpg',c:'助 · 以助扶志，护航成长'}]},
+    {t:'points',h:'发展型资助育人',pts:[
+      {b:'不止解困，更助成长：',s:'「苏师夜校」「宏志助航计划」「一平方希望市集」「励志成长计划」「苏师大集」等品牌项目，提供技能培训、访学交流、心理关怀、学业帮扶、公益实践资源。'}
+    ]},
+    {t:'tel',h:'咨询与防骗提醒',nums:[
+      ['资助政策咨询','党委学生工作部学生资助管理中心 0516-83656248 或学院资助辅导员'],
+      ['防骗提醒','警惕冒充教育部门或学校工作人员，以「助学金」「补贴」名义要求缴费或提供银行卡信息；收到可疑电话短信，第一时间向辅导员或当地教育部门核实，切勿轻信转账。']
+    ]}
+  ]
+},
+{
+  id:'mind',name:'心理健康',icon:'m',ixt:'心情晴雨表',
+  desc:'心理咨询预约方式与求助热线',
+  blocks:[
+    {t:'points',h:'心理中心与心育空间',pts:[
+      {b:'学生心理健康教育与咨询中心：',s:'<hl>泉山校区 32 号楼</hl>；另有心育长廊、心育宣传栏、「一站式」学生社区心育空间。'},
+      {b:'心育团队：',s:'专职心理健康教育教师、专兼职心理咨询师、各学院心理辅导员与心理信息站、班级心理委员与宿舍气象员、大学生发展协会学长学姐。'}
+    ]},
+    {t:'figs',h:'心理中心与心育空间实拍',n:3,a:[
+      {s:'img/image85.jpg',c:'学生心理健康教育与咨询中心'},
+      {s:'img/image86.jpg',c:'心育长廊'},
+      {s:'img/image87.jpg',c:'心育宣传栏'},
+      {s:'img/image88.jpg',c:'「一站式」学生社区心育空间'},
+      {s:'img/image89.jpg',c:'「苏心门户」小程序'}
+    ]},
+    {t:'tel',h:'心理咨询预约方式',nums:[
+      ['预约电话','0516-83656258'],
+      ['现场预约','校学生心理健康教育与咨询中心预约室（泉山校区 32 号楼 1 楼）']
+    ]},
+    {t:'points',h:'预约与咨询信息',pts:[
+      {b:'预约时间：',s:'2026 年 9 月 14 日—2027 年 1 月 1 日（每周一至周五）<hl>8:00—12:00、14:00—17:00、18:00—20:00</hl>。'},
+      {b:'线下咨询地点：',s:'泉山校区：校学生心理健康教育与咨询中心（教 32 号楼 3 楼）；云龙校区：云龙校区服务站（4 号楼 109 室）。'}
+    ]},
+    {t:'tel',h:'求助热线（点击号码可复制）',nums:[
+      ['江苏师范大学 24 小时阳光心理热线','19852059689（每天 0:00-24:00）'],
+      ['全国统一心理援助热线','12356'],
+      ['江苏省大学生 24 小时心理热线','025-58255200（每天 0:00-24:00，苏心门户小程序「我在你说」板块）'],
+      ['南京师范大学心理援助热线','4008080132（每天 9:00-21:00）'],
+      ['苏州大学心理援助热线','0512-67168525（每天 8:00-24:00）']
+    ]},
+    {t:'points',h:'给萌新的心里话',pts:[
+      {b:'敢于求助，不是软弱：',s:'负面情绪长时间挥之不去，别硬扛——心理中心保密是首要原则，可安心倾诉。'},
+      {b:'关照内心：',s:'适应需要时间，主动探索本身就是成长的开始；每个人或快或慢，都会找到自己的节奏。'}
+    ]}
+  ]
+},
+{
+  id:'edu',name:'入学教育',icon:'e',ixt:'校园知识快答',
+  desc:'三阶段安排 + 八大教育内容',
+  blocks:[
+    {t:'points',h:'活动主题与总体安排',pts:[
+      {b:'主题：',s:'怀远志 · 展新程。'},
+      {b:'蓄能教育：',s:'报到之前，线上启蒙——未到校先入班、未谋面先交流、未入学先引导。'},
+      {b:'固本教育：',s:'报到—<hl>9 月 30 日</hl>，以迎新、军训为契机，通过主题班会、专题讲座、实景参观、线上微课完成身份与思想转换。'},
+      {b:'致远教育：',s:'<hl>10 月 1 日—12 月初</hl>，学业导航与生涯规划、生命健康与心理普测、榜样励志分享。'}
+    ]},
+    {t:'points',h:'1. 理想信念教育',pts:[{b:'要点：',s:'争做有理想、敢担当、能吃苦、肯奋斗的新时代好青年。'}]},
+    {t:'figs',n:2,a:[{s:'img/image90.jpg',c:'理想信念教育'},{s:'img/image91.jpg',c:'理想信念教育'}]},
+    {t:'points',h:'2. 国防教育',pts:[{b:'要点：',s:'以军训为抓手、军事理论课为途径、国防教育月活动为依托。'}]},
+    {t:'figs',n:2,a:[{s:'img/image92.jpg',c:'国防教育'}]},
+    {t:'points',h:'3. 爱校荣校教育',pts:[{b:'要点：',s:'解读建校北迁历史、扎根苏北创业的精神传承。'}]},
+    {t:'figs',n:2,a:[{s:'img/image93.jpg',c:'爱校荣校教育'},{s:'img/image94.jpg',c:'爱校荣校教育'}]},
+    {t:'points',h:'4. 专业认知教育',pts:[{b:'要点：',s:'学科定位、课程体系、师资优势、学业考核、就业升学路径。'}]},
+    {t:'figs',n:2,a:[{s:'img/image95.jpg',c:'专业认知教育'}]},
+    {t:'points',h:'5. 安全与防诈教育',pts:[{b:'要点：',s:'法治观念、网络素养、消防安全与应急自救、电信诈骗防范。'}]},
+    {t:'figs',n:2,a:[{s:'img/image96.jpg',c:'安全与防诈教育'},{s:'img/image97.jpg',c:'安全与防诈教育'}]},
+    {t:'points',h:'6. 基础文明教育',pts:[{b:'要点：',s:'《高等学校学生行为准则》《学生手册》；宿舍文明与相处礼仪；感恩励志教育。'}]},
+    {t:'figs',n:2,a:[{s:'img/image98.jpg',c:'基础文明教育'}]},
+    {t:'points',h:'7. 生涯规划教育',pts:[{b:'要点：',s:'考研升学、基层就业、参军入伍、创新创业规划。'}]},
+    {t:'figs',n:2,a:[{s:'img/image99.jpg',c:'生涯规划教育'}]},
+    {t:'points',h:'8. 生命健康教育',pts:[{b:'要点：',s:'心理健康教育与团辅活动，掌握心理调适方法与咨询援助渠道。'}]},
+    {t:'figs',n:2,a:[{s:'img/image100.jpg',c:'生命健康教育'}]}
+  ]
+},
+{
+  id:'comm',name:'一站式社区',icon:'hui',ixt:'办事流程导航',
+  desc:'场地预约、事务办理、自助服务、法律援助、活动预告',
+  blocks:[
+    {t:'info',h:'场地预约',lead:'「一站式」学生社区场地分线上、线下两种预约渠道，不同场地对应方式不同。',pts:[
+      {b:'① 线上预约：',s:'打开「爱师大」APP → 点击智慧学工 → 点击场馆预约 → 选择个人预约 → 选择场地 → 预约完成。'},
+      {b:'② 线下预约：',s:'提前一个工作日到前台填写线下预约表 → 值班人员核对信息 → 预约完成。'},
+      {b:'学院团队预约：',s:'可联系教 35 号楼 210 办公室乔子芮老师，办公电话 <hl>83656238</hl>。'},
+      {b:'注意：',s:'<wn>泉北「一站式」学生社区舞蹈房与瑜伽室的预约，需至 34 号宿舍楼 B 栋一楼前台办理。</wn>'}
+    ]},
+    {t:'figs',h:'场地预约 · 图解',n:2,a:[
+      {s:'img/image107.jpg',c:'场地预约 · ① 线上预约流程'},
+      {s:'img/image108.jpg',c:'场地预约 · ② 线下预约'}
+    ]},
+    {t:'tbl',h:'事务办理（工作日 12:00—18:00）',head:['事项','地点与流程'],rows:[
+      ['研究生学籍事务','泉北「一站式」学生社区（34 号宿舍楼 B 栋一楼）。办理成绩单、在读证明等业务需先完成院级审核、盖章；携带本人校园一卡通、盖有院章的材料，找值班人员办理。'],
+      ['学生证补办','泉南「一站式」学生社区 117 室（校医院东南侧）。「爱师大」APP → 工作台 → 服务大厅 → 提交学生证补办申请；备好一寸照片，填写本人班级、姓名等信息交给值班人员 → 通过支付宝生活号「江苏师范大学计划财务处」完成缴费 → 加入对应通知群等待通知。'],
+      ['一卡通业务','泉南「一站式」学生社区 117 室。补办流程：确认校园卡余额 ≥20 元（不足需提前充值）→ 告知工作人员校园卡号 → 核对信息并登记 → 打印新校园卡；挂失、解绑既可在「爱师大—工作台—校园卡」线上操作，也可交由值班人员协助。'],
+      ['医保报销','泉南 117 室（泉山校区）／4 号楼 317 办公室（云龙校区）。门诊需转诊单、发票明细、病历、身份证正反面复印件；住院需住/出院证明（文件名需为住/出院证明并带医院盖章）、发票及明细、银行卡复印件、身份证正反面复印件。']
+    ]},
+    {t:'tel',h:'卡片异常？去卡务中心',nums:[
+      ['卡务中心','综合楼二楼卡务中心办公室（一食堂东隔壁、惠选校园超市二楼）。校园卡无法刷门禁、显示黑户、无法刷卡付钱、刷脸无法进出图书馆、账单异常等，需自行前往卡务中心由老师处理。']
+    ]},
+    {t:'info',h:'自助服务',lead:'以下自助设备开放时间长，办事更省心（节假日另行通知）。',pts:[
+      {b:'本科生学籍事务（自助打印）：',s:'打印带章的成绩单、在读证明等。泉山：泉南、泉北「一站式」B 栋，<hl>8:00—20:30</hl>；云龙：4 号楼一楼，全天开放。流程：选择登录方式（密码为身份证后六位）→ 选择成绩单类型和份数 → 使用校园卡支付（<hl>首次使用前两份免费</hl>）→ 打印成功。'},
+      {b:'自助打印机：',s:'配备黑白、彩印两台设备，支持文档打印，可电脑操作也可手机扫码上传文件打印；位于泉南「一站式」117 室。'},
+      {b:'校园卡自助办理机：',s:'携带身份证即可自助办理校园卡相关业务；位于泉北「一站式」B 栋。'},
+      {b:'模拟面试厅：',s:'提供模拟面试练习，提升面试能力；位于泉南「一站式」117 室对面。'}
+    ]},
+    {t:'tel',h:'法律援助',nums:[
+      ['法律援助','时间：每周三 <hl>14:00—17:00</hl>（节假日另行通知）；地点：泉南「一站式」学生社区 109 室（108 室内侧）。']
+    ]},
+    {t:'figs',h:'法律援助',n:2,a:[{s:'img/image109.jpg',c:'法律援助'}]},
+    {t:'info',h:'其他服务与活动预告',pts:[
+      {b:'常态化专题咨询：',s:'网络服务、社工服务、出国留学、心理健康等专题咨询活动；相关资讯可关注「苏师学工」「玉泉心语」微信公众号。'},
+      {b:'社区前台：',s:'全天候提供各类事务咨询服务，同时面向全体同学征集意见建议。'},
+      {b:'活动预告：',s:'秋风有信，社区有约——「一站式」学生社区，服务常在、活动常新，期待与你不见不散。'}
+    ]},
+    {t:'figs',h:'活动预告',n:2,a:[{s:'img/image110.jpg',c:'活动预告'}]}
+  ]
+}
+];
+/* ===== 视图切换 ===== */
+function show(id){
+  var vs=document.querySelectorAll('.view');
+  for(var i=0;i<vs.length;i++)vs[i].classList.remove('active');
+  el(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+/* ===== 号码复制 ===== */
+function copyNum(txt,btn){
+  var ok=function(){var o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(function(){btn.textContent=o;},1300);};
+  var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok();}catch(e){btn.textContent='复制失败';}document.body.removeChild(ta);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok).catch(fb);}else{fb();}
+}
+
+/* ===== 渲染：导览卡片 ===== */
+function renderNav(){
+  el('mod-grid').innerHTML=MODULES.map(function(m){
+    return '<a class="mod-card" onclick="openModule(\''+m.id+'\')"><span class="ic">'+icon(m.icon)+'</span>'
+      +'<span><h3>'+m.name+'</h3><p>'+m.desc+'</p><span class="ixtag">互动 · '+m.ixt+'</span></span></a>';
+  }).join('');
+}
+
+/* ===== 渲染：详情区块 ===== */
+function renderBlock(b){
+  var ic=icon('e');
+  if(b.t==='tbl'){
+    return '<div class="sec-block"><h3>'+ic+b.h+'</h3>'+(b.lead?'<div class="lead">'+b.lead+'</div>':'')
+      +'<div class="tbl-wrap"><table class="tbl"><tr>'+b.head.map(function(h){return '<th>'+h+'</th>';}).join('')+'</tr>'
+      +b.rows.map(function(r){return '<tr>'+r.map(function(c){return '<td>'+c+'</td>';}).join('')+'</tr>';}).join('')+'</table></div></div>';
+  }
+  if(b.t==='gallery'){
+    return '<div class="sec-block"><h3>' + icon(b.ic||'e') + b.h + (b.cap?'<span class="cap">'+b.cap+'</span>':'') + '</h3>' + (b.lead?'<div class="lead">'+b.lead+'</div>':'')
+      + '<div class="gal' + (b.tall?' tall':'') + '">' + b.imgs.map(function(im){
+        var c=(im.c||'').replace(/'/g,'');
+        return '<figure onclick="openLbox(\'' + im.s + '\',\'' + c + '\')"><img loading="lazy" src="' + im.s + '" alt="' + c + '" onerror="this.parentNode.style.display=\'none\'"><figcaption>' + c + '</figcaption></figure>';
+      }).join('') + '</div>' + (b.note?'<div class="gal-note">'+b.note+'</div>':'') + '</div>';
+  }
+  if(b.t==='figs'){
+    return '<div class="sec-block">'+(b.h?('<h3>'+icon(b.ic||'e')+b.h+'</h3>'):'')+(b.lead?'<div class="lead">'+b.lead+'</div>':'')
+      +'<div class="figs'+(b.n?(' n'+b.n):'')+'">'+b.a.map(function(im){
+        var c=(im.c||'').replace(/'/g,'');
+        return '<figure onclick="openLbox(\''+im.s+'\',\''+c+'\')"><img loading="lazy" src="'+im.s+'" alt="'+c+'" onerror="this.parentNode.style.display=\'none\'"><figcaption>'+c+'</figcaption></figure>';
+      }).join('')+'</div></div>';
+  }
+  if(b.t==='tel'){
+    return '<div class="sec-block"><h3>'+icon('hui')+b.h+'</h3>'+b.nums.map(function(n){
+      var mt=n[1].match(/\d[\d-]{4,}/);var num=mt?mt[0]:'';
+      return '<div class="tel-line"><span><b style="color:var(--brand)">'+n[0]+'：</b>'+n[1]+'</span>'
+        +(num?'<button class="copy" onclick="copyNum(\''+num+'\',this)">复制</button>':'')+'</div>';
+    }).join('')+'</div>';
+  }
+  var phtml=b.pts?'<div class="points">'+b.pts.map(function(p){return '<div class="point"><b>'+p.b+'</b>'+p.s+'</div>';}).join('')+'</div>':'';
+  return '<div class="sec-block"><h3>'+ic+b.h+'</h3>'+(b.lead?(b.pts?'<div class="lead">'+b.lead+'</div>':'<div class="body-txt">'+b.lead+'</div>'):'')+phtml+'</div>';
+}
+
+/* ===== 打开分区 ===== */
+function openModule(id){
+  var m=null;
+  for(var i=0;i<MODULES.length;i++)if(MODULES[i].id===id)m=MODULES[i];
+  if(!m)return;
+  el('d-title').textContent=m.name;
+  el('d-sub').textContent=m.desc+' · 互动：'+m.ixt;
+  el('d-ix').innerHTML='';
+  el('d-body').innerHTML=m.blocks.map(renderBlock).join('');
+  show('view-detail');
+  if(IX[id])IX[id]();
+}
+
+/* ===== 互动卡片骨架 ===== */
+function ixShell(title,sub,inner){
+  return '<div class="ix-card"><div class="ix-head"><span class="ix-pill">互动</span><h3>'+title+'</h3></div>'
+    +(sub?'<div class="ix-sub">'+sub+'</div>':'')+inner+'</div>';
+}
+/* ===== 通用：单选测验（答对/答错即时反馈） ===== */
+function buildQuiz(box,qs,resultHTML){
+  var done=qs.map(function(){return -1;});
+  box.innerHTML='<div class="quiz">'+qs.map(function(q,qi){
+    return '<div class="quiz-q" data-qi="'+qi+'"><div class="q">'+(qi+1)+'. '+q.q+'</div><div class="qopts">'
+      +q.opts.map(function(o,oi){return '<button type="button" class="qopt" data-oi="'+oi+'">'+o+'</button>';}).join('')
+      +'</div><div class="qfb"></div></div>';
+  }).join('')+'<div class="quiz-out"></div></div>';
+  function lock(){
+    for(var i=0;i<done.length;i++)if(done[i]<0)return;
+    var sc=0;for(var j=0;j<qs.length;j++)if(done[j]===qs[j].a)sc++;
+    var out=box.querySelector('.quiz-out');
+    out.className='quiz-out show';
+    out.innerHTML=resultHTML(sc,qs.length);
+    var rb=document.createElement('button');rb.type='button';rb.className='redo';rb.textContent='再来一次 ↻';
+    rb.onclick=function(){buildQuiz(box,qs,resultHTML);};
+    out.appendChild(rb);
+  }
+  var btns=box.querySelectorAll('.qopt');
+  for(var k=0;k<btns.length;k++){
+    btns[k].addEventListener('click',function(){
+      var qd=this.parentNode.parentNode;
+      var qi=+qd.getAttribute('data-qi');
+      if(done[qi]>=0)return;
+      var oi=+this.getAttribute('data-oi');
+      done[qi]=oi;
+      var all=qd.querySelectorAll('.qopt');
+      for(var i=0;i<all.length;i++){
+        all[i].className='qopt disabled';
+        if(i===qs[qi].a)all[i].classList.add('sel-ok');
+      }
+      if(oi!==qs[qi].a)this.className='qopt disabled sel-bad';
+      var fb=qd.querySelector('.qfb');
+      fb.className='qfb show '+(oi===qs[qi].a?'ok':'bad');
+      fb.textContent=(oi===qs[qi].a?'答对啦：':'差一点：')+qs[qi].tip;
+      lock();
+    });
+  }
+}
+
+var IX={};
+var PIN_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.3-6.5-10a6.5 6.5 0 0 1 13 0c0 4.7-6.5 10-6.5 10z"/><circle cx="12" cy="10.5" r="2.3"/></svg>';
+
+/* 1. 入学准备：报到闯关路线图 */
+IX.prepare=function(){
+  var nodes=[
+    {t:'第 1 站 · 出发前',tasks:['12306 预约学生票：<hl>8 月 1 日—30 日</hl>，可提前 17~20 天预约','证件材料装袋：录取通知书、身份证及复印件、证件照、<wn>密封档案切勿拆封</wn>','电煮锅、吹风机等大功率电器留在家']},
+    {t:'第 2 站 · 抵校报到',tasks:['到所在学院报到处核验材料、完成登记','学费住宿费暂未凑齐？现场走「绿色通道」，先报到、后缴费']},
+    {t:'第 3 站 · 入住宿舍',tasks:['清点物资、认识室友、熟悉公共浴室与超市位置','收费信息只认辅导员和官方通知，陌生群链接不点']},
+    {t:'第 4 站 · 开学第一周',tasks:['按时参加入学教育与军训（9 月 16 日—30 日）','牢记防骗三原则：贷款不收费、刷单即诈骗、不共享屏幕']}
+  ];
+  var box=el('d-ix');
+  box.innerHTML=ixShell('报到闯关路线图','跟着 4 个站点逐项打卡，集齐通关徽章：',
+    '<div class="quest-bar">闯关进度：<b id="q-bar">0/'+nodes.length+'</b></div><div class="quest">'
+    +nodes.map(function(n,i){
+      return '<div class="qnode" data-i="'+i+'"><div class="qn-dot">'+(i+1)+'</div><div class="qn-t">'+n.t+'</div>'
+        +'<div class="qn-tasks">'+n.tasks.map(function(x){return '· '+x+'<br>';}).join('')+'</div>'
+        +'<button type="button" class="qn-btn">完成打卡</button></div>';
+    }).join('')+'</div>'
+    +'<div class="quest-win" id="q-win"><svg class="badge" viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#f59e0b"/><circle cx="32" cy="32" r="23" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="3 4"/><path d="M20 33l8 8 16-17" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    +'<div class="wt">通关成功</div><div class="ws">报到闯关达人 · 入学准备已就绪，苏师欢迎你！</div></div>');
+  function refresh(){
+    var ds=box.querySelectorAll('.qnode.done').length;
+    el('q-bar').textContent=ds+'/'+nodes.length;
+    if(ds===nodes.length){el('q-win').classList.add('show');}
+  }
+  var bs=box.querySelectorAll('.qn-btn');
+  for(var i=0;i<bs.length;i++){
+    bs[i].addEventListener('click',function(){
+      var nd=this.parentNode;
+      if(nd.classList.contains('done'))return;
+      nd.classList.add('done');
+      this.textContent='已完成 ✓';this.disabled=true;
+      refresh();
+    });
+  }
+};
+
+/* 2. 军训：防暑自测 */
+IX.army=function(){
+  var qs=[
+    {q:'军训时出汗多，水应该怎么喝？',opts:['休息时一次喝够两大杯冰水','少量多次，选淡盐水或电解质水','只喝冰镇饮料最解暑'],a:1,tip:'切忌一次性大量饮水，不要直接喝冰水。'},
+    {q:'训练中突然头晕、心慌、出虚汗、恶心，应该怎么办？',opts:['咬牙坚持，过会儿就好','立刻停训，到阴凉通风处休息并补电解质、物理降温','马上喝热水继续训练'],a:1,tip:'这是中暑前兆，严重时第一时间联系校医。'},
+    {q:'正步踢太猛崴了脚，正确处理是？',opts:['立即停止训练，不揉搓、不热敷','使劲揉搓活血','回宿舍热敷舒筋'],a:0,tip:'崴脚、拉伤切勿揉搓热敷；训练后还要做拉伸、温水泡脚。'}
+  ];
+  el('d-ix').innerHTML=ixShell('防暑自测 · 耐热指数','3 道题，看看你的军训防护能打几颗星：','<div id="army-qz"></div>');
+  buildQuiz(el('army-qz'),qs,function(sc){
+    var star='★'.repeat(sc)+'☆'.repeat(3-sc);
+    var msg=sc===3?'防暑小达人！补给、中暑信号、损伤处理全都门清，上训练场吧。':sc===2?'基础不错，再把答错的那条防护要点读一遍就满分。':'出发前建议重读上方「五大防护」，防暑防伤都不踩坑。';
+    return '<div class="stars">'+star+'</div><b>'+sc+'/3 正确</b> — '+msg;
+  });
+};
+
+/* 3. 校园生活：地点速查地图 */
+IX.life=function(){
+  var MAP={
+    '泉山':[
+      {n:'超市便利店',d:'罗森（美院与音院之间）；惠选（一食堂对面、泉北快递中心旁）；七星（一组团旁、校医院对面）；西校区超市（中俄学院附近）；集好购（34 号宿舍楼下）。'},
+      {n:'快递取件',d:'泉北快递中心，紧邻惠选超市（泉北生活区）。'},
+      {n:'公共浴室',d:'恒温热水淋浴、独立更衣区，常规开放 12:00—22:40；生活区覆盖公用吹风机、洗衣机。'},
+      {n:'校内循环巴士',d:'每日 6:50—21:30，1 元/人次，可办月票享九折，支持微信、支付宝扫码。'},
+      {n:'地铁出行',d:'3 号线「师范大学站」近东南门（2 号门），直达徐州火车站；6 号线「铜山中医院站」近南门（3 号门），直达徐州东站。'},
+      {n:'东门公交',d:'东门（1 号门）外「江苏师范大学」站：11附、19 路往市中心及老火车站；72 路（含夜班）达高铁东站；95 路连铜山新区。'},
+      {n:'一站式社区',d:'泉南、泉西、泉北（34B/34C 栋宿舍一楼），工作日 8:00—20:30，可办证件补办、医保报销、成绩单打印等。'},
+      {n:'微光后勤驿站',d:'泉山南部蜜雪冰城对面，定期免费衣物缝补、自行车维修、眼镜清洗，见「江苏师大后勤」公众号预约。'}
+    ],
+    '云龙':[
+      {n:'超市与打印',d:'超市位于学生公寓 1-3# 楼侧，内部设有打印店。'},
+      {n:'公共浴室',d:'配有公共浴室，常规开放 12:00—22:40；吹风机、洗衣机各生活区覆盖。'},
+      {n:'地铁出行',d:'紧邻 2 号线「师大云龙校区站」，步行约 1 分钟；往东站乘 2 号线换 1 号线，往火车站 2 号线直达。'},
+      {n:'公交出行',d:'「江苏师范大学云龙校区站」：11附、19 路往市中心及老火车站；70、64、8、49 路衔接各片区与客运北站。'},
+      {n:'一站式社区',d:'4 号楼一楼，工作日 8:00—20:30。'},
+      {n:'心理咨询点',d:'云龙校区服务站：4 号楼 109 室。'}
+    ],
+    '文庭雅苑':[
+      {n:'文享学街',d:'商业楼一层：24 小时便利店、水吧、水果店。'},
+      {n:'生活全能小集市',d:'地下负二层：快递驿站、生活超市、自助洗衣房、干洗店、文印室。'},
+      {n:'研享食集',d:'商业楼二层：风味美食集合地。'},
+      {n:'公寓客服与报修',d:'客服时间 7:00—22:00；24 小时服务热线 0516-80801339。'},
+      {n:'地铁出行',d:'紧邻 6 号线「徐州市中医院站」，可直达徐州东站；往火车站乘 6 号线换 3 号线。'},
+      {n:'↔ 泉山通勤班车',d:'雅苑→泉山：7:00、7:10、8:55、13:00、18:00；泉山→雅苑：12:15、17:30、17:35、21:10。'}
+    ]
+  };
+  var box=el('d-ix');
+  var tabs=Object.keys(MAP);
+  box.innerHTML=ixShell('地点速查地图','选校区，点地点，马上告诉你在哪、怎么走：',
+    '<div class="map-hero"><img loading="lazy" src="img/campus-map.jpg" alt="江苏师范大学泉山校区地图" onclick="openLbox(\'img/campus-map.jpg\',\'江苏师范大学泉山校区校园地图\')"><div class="map-cap">江苏师范大学（泉山校区）地图 · 点击放大</div></div>'
+    +'<div class="map-tabs">'+tabs.map(function(t,i){return '<button type="button" class="mtab'+(i===0?' on':'')+'" data-t="'+t+'">'+t+'</button>';}).join('')+'</div>'
+    +'<div class="pins" id="map-pins"></div><div class="pin-card" id="map-card"></div>');
+  function draw(tab){
+    el('map-pins').innerHTML=MAP[tab].map(function(p,i){
+      return '<button type="button" class="pin'+(i===0?' on':'')+'" data-i="'+i+'">'+PIN_ICON+p.n+'</button>';
+    }).join('');
+    showCard(0);
+    var ps=el('map-pins').querySelectorAll('.pin');
+    for(var i=0;i<ps.length;i++){ps[i].addEventListener('click',function(){
+      var all=this.parentNode.querySelectorAll('.pin');
+      for(var j=0;j<all.length;j++)all[j].classList.remove('on');
+      this.classList.add('on');
+      showCard(+this.getAttribute('data-i'));
+    });}
+  }
+  function showCard(i){
+    var tab=box.querySelector('.mtab.on').getAttribute('data-t');
+    var p=MAP[tab][i];
+    var c=el('map-card');c.className='pin-card show';
+    c.innerHTML='<div class="pc-t">'+p.n+' · '+tab+'</div><div>'+p.d+'</div>';
+  }
+  var ts=box.querySelectorAll('.mtab');
+  for(var k=0;k<ts.length;k++){ts[k].addEventListener('click',function(){
+    var all=box.querySelectorAll('.mtab');
+    for(var j=0;j<all.length;j++)all[j].classList.remove('on');
+    this.classList.add('on');
+    draw(this.getAttribute('data-t'));
+  });}
+  draw(tabs[0]);
+};
+
+/* 4. 食堂：今天吃什么 */
+IX.food=function(){
+  var FOOD=[
+    {n:'朱家小馆辣肉面',p:'一食堂',t:['spicy','noodle']},{n:'鸭血粉丝汤',p:'一食堂',t:['light']},
+    {n:'地锅鸡',p:'二食堂（玉泉河餐厅）',t:['spicy','rice']},{n:'0090 汉堡',p:'二食堂',t:['rice','snack']},
+    {n:'饸饹面',p:'二食堂',t:['noodle']},{n:'麻辣拌',p:'二食堂',t:['spicy','rice']},
+    {n:'黄焖鸡',p:'二食堂',t:['rice']},{n:'港式烧腊',p:'二食堂',t:['rice']},
+    {n:'燃面',p:'三食堂',t:['spicy','noodle']},{n:'脆皮烤鸭',p:'三食堂',t:['rice']},
+    {n:'胖姐米线',p:'三食堂',t:['noodle','spicy']},{n:'瓦罐汤',p:'三食堂',t:['light']},
+    {n:'五元套餐（一荤一素、米饭不限量）',p:'三食堂',t:['rice','light']},{n:'麻辣烫',p:'三食堂',t:['spicy']},
+    {n:'称重自选轻食',p:'忆江南美食广场',t:['light','snack']},{n:'麻辣香锅',p:'忆江南',t:['spicy']},
+    {n:'石锅拌饭',p:'忆江南',t:['rice']},{n:'麦当劳',p:'忆江南',t:['snack','rice']},
+    {n:'炸串拌饭',p:'五食堂',t:['rice','snack']},{n:'把子肉',p:'五食堂',t:['rice']},
+    {n:'肉夹馍',p:'五食堂',t:['snack']},{n:'油饼母鸡汤',p:'五食堂',t:['light']},
+    {n:'自选宝宝餐',p:'六食堂（玉兰融合餐厅）',t:['light','rice']},{n:'陕西面馆',p:'六食堂',t:['noodle']},
+    {n:'手工馄饨',p:'六食堂',t:['noodle','light']},{n:'瑞幸咖啡 + 现做糕点',p:'六食堂',t:['snack']},
+    {n:'军歌家膳',p:'七食堂',t:['rice','light']},{n:'西北面食',p:'七食堂',t:['noodle']},
+    {n:'徐州米线',p:'七食堂',t:['noodle']},{n:'瓦香鸡',p:'七食堂',t:['spicy','rice']},
+    {n:'铁板厨房',p:'七食堂',t:['rice']},{n:'千里香馄饨',p:'七食堂',t:['noodle','light']},
+    {n:'徐州风味米线',p:'云龙学生食堂',t:['noodle']},{n:'烤肉饭',p:'云龙学生食堂',t:['rice']},
+    {n:'猪脚饭',p:'云龙学生食堂二楼',t:['rice']},{n:'精品快餐',p:'云龙学生食堂',t:['rice','light']}
+  ];
+  var TASTES=[{k:'all',n:'随便'},{k:'spicy',n:'无辣不欢'},{k:'light',n:'清淡养胃'},{k:'noodle',n:'面食嗦粉'},{k:'rice',n:'米饭套餐'},{k:'snack',n:'小吃轻食'}];
+  var taste='all',last=-1;
+  var box=el('d-ix');
+  box.innerHTML=ixShell('今天吃什么','纠结星人救星：选个口味，让小慧帮你翻牌子：',
+    '<div class="taste-row">'+TASTES.map(function(t,i){return '<button type="button" class="taste'+(i===0?' on':'')+'" data-k="'+t.k+'">'+t.n+'</button>';}).join('')+'</div>'
+    +'<button type="button" class="rand-btn" id="food-go"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg>开始翻牌</button>'
+    +'<div class="rand-out" id="food-out"></div>');
+  var ts=box.querySelectorAll('.taste');
+  for(var i=0;i<ts.length;i++){ts[i].addEventListener('click',function(){
+    for(var j=0;j<ts.length;j++)ts[j].classList.remove('on');
+    this.classList.add('on');taste=this.getAttribute('data-k');
+  });}
+  el('food-go').addEventListener('click',function(){
+    var pool=[];
+    for(var i=0;i<FOOD.length;i++){
+      if(taste==='all'||FOOD[i].t.indexOf(taste)>=0)pool.push(i);
+    }
+    var pick;
+    do{pick=pool[Math.floor(Math.random()*pool.length)];}while(pool.length>1&&pick===last);
+    last=pick;
+    var f=FOOD[pick];
+    var out=el('food-out');out.className='rand-out show';
+    out.innerHTML='今天的缘分是 → <b>'+f.n+'</b><br>地点：'+f.p+'。吃完好好逛校园，明天再来翻牌～';
+  });
+};
+
+/* 5. 学习：学习状态自查（频率量表） */
+IX.study=function(){
+  var qs=['新学期第一次课前，我会先浏览章节标题、标出疑问','上课时我尽量坐前排，并把手机收起来','当天的笔记和重难点，我会当天整理复盘','卡壳的知识点，我会主动请教老师或学长学姐'];
+  var box=el('d-ix');
+  box.innerHTML=ixShell('学习状态自查','4 个动作，按「开学第一周的真实频率」选，没有对错：',
+    '<div id="study-qz">'+qs.map(function(q,i){
+      return '<div class="quiz-q" data-i="'+i+'"><div class="q">'+(i+1)+'. '+q+'</div><div class="qopts">'
+        +[{n:'经常做到',s:2},{n:'偶尔会',s:1},{n:'很少',s:0}].map(function(o){
+          return '<button type="button" class="sopt qopt" data-s="'+o.s+'">'+o.n+'</button>';
+        }).join('')+'</div></div>';
+    }).join('')+'<div class="quiz-out" id="study-out"></div></div>'
+    +'<button type="button" class="redo" id="study-redo" style="display:none">重新自查 ↻</button>');
+  var score=0,answered=0;
+  var bs=box.querySelectorAll('.sopt');
+  for(var i=0;i<bs.length;i++){bs[i].addEventListener('click',function(){
+    if(this.className.indexOf('disabled')>=0)return;
+    var qd=this.parentNode.parentNode;
+    var all=qd.querySelectorAll('.sopt');
+    for(var j=0;j<all.length;j++){all[j].className='sopt qopt disabled';}
+    this.className='sopt qopt disabled sel-pick';
+    score+=+this.getAttribute('data-s');answered++;
+    if(answered===qs.length){
+      var out=el('study-out');out.className='quiz-out show';
+      var stars=score>=7?'★★★':score>=4?'★★☆':'★☆☆';
+      var msg=score>=7?'状态在线！保持节奏，可再冲一波「暖冬晨读/春晓晨读」。'
+        :score>=4?'潜力档：从 4 个动作里挑 1 个最容易的，连续打卡 7 天再升级。'
+        :'重启档：别贪多——第一周只立两个规矩：坐前排、当天笔记当天清。';
+      out.innerHTML='<div class="stars">'+stars+'</div><b>'+score+'/8 分</b> — '+msg;
+      el('study-redo').style.display='inline-block';
+    }
+  });}
+  el('study-redo').addEventListener('click',function(){IX.study();});
+};
+
+/* 6. 奖助：资助适配自查 */
+IX.aid=function(){
+  var OPTS=[
+    {n:'报到前学费、住宿费暂时凑不齐',a:'走「绿色通道」先报到、后缴费：登录「爱师大」APP「欢迎新同学」板块线上申请；入学后参加家庭经济困难学生认定。同时可在 7—9 月到户籍所在地教育局学生资助中心办理生源地国家助学贷款，本专科生每年最高 20000 元，在校期间利息由国家财政承担。'},
+    {n:'想靠劳动补贴生活费',a:'了解勤工助学：面向大二及以上学有余力的建档学生，图书馆助理、行政助理等岗位，薪酬 14 元/小时，每月不超过 40 小时、单月上限 560 元，在「爱师大」APP 申请。'},
+    {n:'家里突发变故或本人重病',a:'两条通道：① 临时困难补助，遇突发疾病、家庭变故可申请，全年畅通快速审批；② 符合残疾学生、孤儿、因公牺牲人员子女、重病学生等情形可申请学费减免。先联系学院资助辅导员。'},
+    {n:'成绩好，想争取奖学金荣誉',a:'学校设多层次奖学金体系，表彰勤学善思、品行端正、综合素养突出的学生；另有立德树人奖学金、朱敬文奖学金与「十佳百优」「苏师榜样」等评选，先把 GPA 和综合素质发展攒起来。'},
+    {n:'计划入伍、退役复学或去苏北基层就业',a:'对应专项资助：应征入伍、招军士、退役复学（入学）享学费补偿/贷款代偿/学费减免（本专科每年最高 20000 元）；应届毕业生到苏北基层岗位连续就业满 36 个月，可申请学费补偿贷款代偿。'},
+    {n:'我只是想先咨询一下政策',a:'拨打党委学生工作部学生资助管理中心电话 0516-83656248，或联系本学院资助辅导员。提醒：助学贷款办理不收取任何费用，凡要求先交手续费、保证金的都是诈骗。'}
+  ];
+  var box=el('d-ix');
+  box.innerHTML=ixShell('资助适配自查','点一下你目前的情况（可反复切换查看）：',
+    '<div class="qopts">'+OPTS.map(function(o,i){return '<button type="button" class="aopt qopt" data-i="'+i+'">'+o.n+'</button>';}).join('')+'</div>'
+    +'<div class="pin-card" id="aid-out"></div>');
+  var bs=box.querySelectorAll('.aopt');
+  for(var i=0;i<bs.length;i++){bs[i].addEventListener('click',function(){
+    for(var j=0;j<bs.length;j++)bs[j].classList.remove('sel-pick');
+    this.classList.add('sel-pick');
+    var o=OPTS[+this.getAttribute('data-i')];
+    var out=el('aid-out');out.className='pin-card show';
+    out.innerHTML='<div class="pc-t">小慧建议</div><div>'+o.a+'</div>';
+  });}
+};
+
+/* 7. 心理：心情晴雨表 */
+IX.mind=function(){
+  var S=function(b,col){return '<svg class="mi" viewBox="0 0 48 48" fill="none" stroke="'+col+'" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">'+b+'</svg>';};
+  var MOODS=[
+    {n:'焦虑紧张',ic:S('<path d="M14 30a8 8 0 1 1 16 0c0 5-8 6-8 10"/><circle cx="22" cy="44" r="1.6" fill="#ea580c" stroke="none"/>','#ea580c'),
+     a:'适应期焦虑很常见。试试：① 把担心写下来，区分「能行动的」和「暂时不可控的」；② 4-7-8 呼吸法——吸气 4 秒、屏息 7 秒、慢呼 8 秒，做 3 轮；③ 若连续两周睡不好、静不下来，别硬扛。'},
+    {n:'想家孤单',ic:S('<path d="M30 8a13 13 0 1 0 10 21 11 11 0 0 1-10-21z"/>','#1d4ed8'),
+     a:'想家一点都不丢人。今晚给家人打个电话；明天定一个「小约定」——约室友吃一顿食堂、加一个兴趣社团；一个人扛着难受时，热线那头有人等你。'},
+    {n:'室友矛盾',ic:S('<path d="M8 12h20v12H15l-5 5v-5H8z"/><path d="M40 18v11h-3v4l-4-4h-9v-2"/>','#7c3aed'),
+     a:'磨合期有摩擦很正常。建议：① 用「我有点在意……」代替「你总是……」；② 趁早一起定宿舍公约（熄灯、卫生、外放声音）；③ 谈不拢就请宿管、辅导员或班级心理委员帮忙调解。'},
+    {n:'学业压力',ic:S('<path d="M6 36h36M10 36V20l14-8 14 8v16"/><path d="M20 36v-9h8v9"/>','#0f766e'),
+     a:'先给任务「降级」：今天只挑最重要的一件小事完成；用番茄钟 25 分钟专注 + 5 分钟休息；去图书馆或一站式自习区找个学习搭子。喘不过气时，找心理中心聊聊不丢人，而且全程保密。'},
+    {n:'失眠疲惫',ic:S('<path d="M30 7a12 12 0 1 0 11 18 10 10 0 0 1-11-18z"/><path d="M9 13h5M7 20h3M14 7v4"/>','#b45309'),
+     a:'睡眠优先于一切硬撑：固定起床时间、睡前 1 小时离开手机屏幕、宿舍灯光调暗，午休控制在 40 分钟内。连续失眠影响白天状态，请及时就医或拨打心理热线。'},
+    {n:'就想聊聊',ic:S('<path d="M8 10h32v22H19l-9 8v-8H8z"/><path d="M17 20h.01M24 20h.01M31 20h.01"/>','#be185d'),
+     a:'愿意说出来，已经是很棒的一步。心理咨询全程保密：泉山 32 号楼、云龙 4 号楼 109 室可面询；不想出门，24 小时阳光热线随时接听。'}
+  ];
+  var box=el('d-ix');
+  box.innerHTML=ixShell('心情晴雨表','此刻更接近哪种心情？点一下，小慧陪你说两句：',
+    '<div class="moods">'+MOODS.map(function(m,i){
+      return '<button type="button" class="mood" data-i="'+i+'">'+m.ic+'<div class="mt">'+m.n+'</div></button>';
+    }).join('')+'</div><div class="mood-out" id="mood-out"></div>');
+  var HL='<div class="hotline">24h 阳光心理热线 19852059689（下方热线列表可一键复制）</div>';
+  var bs=box.querySelectorAll('.mood');
+  for(var i=0;i<bs.length;i++){bs[i].addEventListener('click',function(){
+    var m=MOODS[+this.getAttribute('data-i')];
+    var out=el('mood-out');out.className='mood-out show';
+    out.innerHTML='<b style="color:#ea580c">小慧：</b>'+m.a
+      +'<div style="margin-top:8px">预约面询电话 <b>0516-83656258</b>；全国统一心理援助热线 <b>12356</b>。</div>'+HL;
+  });}
+};
+
+/* 8. 入学教育：校园知识快答 */
+IX.edu=function(){
+  var qs=[
+    {q:'2026 级新生入学教育的主题是？',opts:['怀远志 · 展新程','厚德 · 厚学','青春 · 启航'],a:0,tip:'主题「怀远志 · 展新程」，贯穿蓄能、固本、致远三个阶段。'},
+    {q:'三个教育阶段的正确顺序是？',opts:['固本→蓄能→致远','蓄能（报到前）→固本（报到—9 月 30 日）→致远（10 月起）','致远→固本→蓄能'],a:1,tip:'蓄能线上启蒙，固本借迎新军训转换身份，致远做学业导航与生涯规划。'},
+    {q:'八大教育中，「以军训为抓手、军事理论课为途径」的是？',opts:['专业认知教育','国防教育','基础文明教育'],a:1,tip:'国防教育以军训为抓手，并依托国防教育月活动开展。'},
+    {q:'全国统一心理援助热线号码是？',opts:['12356','12345','12315'],a:0,tip:'全国统一心理援助热线 12356；校内 24h 阳光热线 19852059689。'}
+  ];
+  el('d-ix').innerHTML=ixShell('校园知识快答','4 道题快速入门，看看你是不是「满分苏师人」：','<div id="edu-qz"></div>');
+  buildQuiz(el('edu-qz'),qs,function(sc){
+    var star='★'.repeat(sc)+'☆'.repeat(4-sc);
+    var msg=sc===4?'满分！八大教育与求助渠道都记住了，可以给室友科普了。':sc>=2?'及格线以上，把答错的知识点回看详情页巩固一下。':'别慌，入学教育课上老师会逐项讲，先在上方详情页读一遍。';
+    return '<div class="stars">'+star+'</div><b>'+sc+'/4 正确</b> — '+msg;
+  });
+};
+/* 9. 一站式社区：办事流程导航 */
+IX.comm=function(){
+  var F=[
+    {n:'学生证补办',p:'泉南「一站式」117 室（校医院东南侧）· 工作日 12:00—18:00',s:[
+      '「爱师大」APP → 工作台 → 服务大厅 → 提交学生证补办申请',
+      '备好一寸照片，填写本人班级、姓名等信息，把材料交给值班人员',
+      '打开支付宝生活号「江苏师范大学计划财务处」完成缴费',
+      '加入对应通知群，等待后续通知']},
+    {n:'一卡通补办',p:'泉南「一站式」117 室 · 工作日 12:00—18:00',s:[
+      '确认校园卡余额 ≥20 元，余额不足需提前充值',
+      '告知工作人员校园卡号',
+      '核对信息并登记',
+      '打印新校园卡']},
+    {n:'一卡通挂失 / 解绑',p:'线上可办；卡片异常需到综合楼二楼卡务中心',s:[
+      '「爱师大」→ 工作台 → 校园卡，自行线上操作',
+      '或交由社区值班人员协助办理',
+      '若无法刷门禁、显示黑户、无法付钱、刷脸进不了图书馆等，前往卡务中心（一食堂东隔壁、惠选超市二楼）由老师处理']},
+    {n:'医保报销 · 门诊',p:'泉南 117 室（泉山）/ 4 号楼 317（云龙）· 工作日 12:00—18:00',s:[
+      '准备转诊单','准备发票明细','准备病历','准备身份证正反面复印件','到对应站点提交']},
+    {n:'医保报销 · 住院',p:'泉南 117 室 / 4 号楼 317',s:[
+      '准备住/出院证明（文件名需为住/出院证明，并带医院盖章）','准备发票及明细','准备银行卡复印件','准备身份证正反面复印件']},
+    {n:'成绩单 / 在读证明打印',p:'泉山：泉南、泉北「一站式」B 栋 8:00—20:30；云龙 4 号楼一楼全天开放',s:[
+      '选择登录方式（密码为身份证后六位）','选择打印的成绩单类型和份数','使用校园卡支付（首次使用前两份免费）','打印成功']},
+    {n:'场地预约 · 线上',p:'「爱师大」APP 随时可办',s:[
+      '打开「爱师大」APP','点击智慧学工','点击场馆预约','选择个人预约','选择场地，预约完成']},
+    {n:'场地预约 · 线下',p:'前台办理；泉北舞蹈房、瑜伽室需到 34 号楼 B 栋一楼前台',s:[
+      '提前一个工作日到前台填写线下预约表','值班人员核对信息','预约完成']}
+  ];
+  var box=el('d-ix');
+  box.innerHTML=ixShell('办事流程导航','选一件事，小慧把官方流程一条条列给你：',
+    '<div class="qopts" style="margin-bottom:12px">'+F.map(function(f,i){return '<button type="button" class="comm-opt qopt" data-i="'+i+'">'+f.n+'</button>';}).join('')+'</div>'
+    +'<div class="pin-card" id="comm-out"></div>');
+  var bs=box.querySelectorAll('.comm-opt');
+  for(var i=0;i<bs.length;i++){bs[i].addEventListener('click',function(){
+    for(var j=0;j<bs.length;j++)bs[j].classList.remove('sel-pick');
+    this.classList.add('sel-pick');
+    var f=F[+this.getAttribute('data-i')];
+    var out=el('comm-out');out.className='pin-card show';
+    out.innerHTML='<div class="pc-t">'+f.n+' · 办理步骤</div>'
+      +f.s.map(function(x,k){return '<div class="step"><span class="sn">'+(k+1)+'</span><span>'+x+'</span></div>';}).join('')
+      +'<div class="stepp">地点 / 时间：'+f.p+'</div>';
+  });}
+};
+/* ================================================================
+   小慧智能体：知识库 + 关键词匹配 + 安全规则
+================================================================ */
+var WARN='<div class="warn-card"><b>防骗提醒：</b>国家助学贷款、助学金办理<wn>不收取任何费用</wn>；不点陌生链接、不共享屏幕、不向陌生人转账；有疑问先联系辅导员或学校核实。</div>';
+var CARE='<div class="care-card"><b>如果你正处在危险念头中：</b>请立刻拨打校内 24h 阳光心理热线 <b>19852059689</b> 或全国统一心理援助热线 <b>12356</b>，也请马上告诉身边的辅导员、室友或家人；遇到紧急危险可拨打 <b>120 / 110</b>。你不是负担，有人愿意陪你一起面对。</div>';
+
+var KB=[
+/* —— 入学准备 —— */
+{k:['火车','高铁票','12306','车票','学生票','买票','订票','抢票'],
+ a:'结论先行：新生可走 12306 预约绿色通道。<br>① <hl>8 月 1 日—30 日</hl>，在铁路 12306 APP「学生预约购票服务」使用新生预约功能；<br>② 符合条件可在发车前 <hl>17~20 天</hl>提前预约，按规定享受学生优惠票价；<br>③ 铁路部门优先保障新生购票需求。',
+ rel:['行李要带哪些？','军训几号开始？']},
+{k:['行李','带什么','必备','准备什么','收拾','证件','档案','团组织','照片','宿舍要带'],
+ a:'行李按三类收：<br><b>证件材料：</b>录取通知书、身份证、户口本及复印件（多备几份）、一寸/二寸证件照（留好电子版）、<wn>密封档案切勿私自拆封</wn>、党团组织关系证明、贫困生资助材料、银行卡；<br><b>生活用品：</b>夏秋衣物加薄外套、床上用品、床帘、雨伞、3C 认证插排、充电器充电宝、电脑 U 盘；<br><b>军训用品：</b>驱蚊防晒、鞋垫、大容量水杯、小风扇。',
+ rel:['哪些电器不能带？','军训要准备什么物资？']},
+{k:['电器','违禁','大功率','吹风机','电煮锅','电水壶','电热毯','插排','锅'],
+ a:'这些不能带进宿舍：<wn>电煮锅、电水壶、吹风机、电热毯等大功率发热电器，以及三无、改装电器和劣质插排。</wn>插排请选 3C 认证产品，手机、电脑、小风扇这类小型低压设备可以正常使用。',
+ rel:['行李要带哪些？']},
+{k:['作息','收心','调整状态','晚睡','起不来','假期','倒时差'],
+ a:'三步切换开学模式：<br>① <b>倒推作息：</b>每天把入睡时间提前 30 分钟，睡前 1 小时关掉电子设备；<br>② <b>白天活动：</b>每天至少 40 分钟户外运动；<br>③ <b>短期目标：</b>比如每周 50 个单词、每天运动打卡，写便签贴桌前逐项打勾。',
+ rel:['学习状态怎么调整？']},
+{k:['防骗','诈骗','骗子','刷单','共享屏幕','被骗','骗','套路','返利','陌生链接'],
+ a:'开学防骗三原则，记住就够用：<br>① <b>贷款不收费：</b>助学贷款不收任何费用，要先交手续费/保证金的都是骗子；<br>② <b>刷单即诈骗：</b>点赞刷单、充值返利全是陷阱；<br>③ <b>不共享屏幕：</b>教育部门和银行不会通过共享屏幕指导你操作贷款，可疑情况直接联系辅导员核实。',
+ rel:['助学贷款怎么办？','资助中心电话是多少？']},
+
+/* —— 军训 —— */
+{k:['军训时间','几号军训','军训几号','军训什么时候','军训日期','军训多久','几号开始','中秋'],
+ a:'2026 级新生军训定于 <hl>9 月 16 日—9 月 30 日</hl>，9 月 25 日中秋节当天休息一天；训练期间会根据天气动态调整训练时间和计划。',
+ rel:['军训每天几点到几点？','军训要准备什么物资？']},
+{k:['军训作息','几点训练','训练时间','上午','下午','几点到几点','8:10'],
+ a:'军训实行错峰错时作息：<br>上午 <hl>8:10（8:20）—11:10（11:20）</hl>；下午 <hl>14:10—17:10</hl>。具体以学院和教官通知为准。',
+ rel:['中暑了怎么办？']},
+{k:['缓训','免训','伴训','全训','请假','不能军训','身体原因'],
+ a:'因身体原因不能正常参训：按学院（部）要求完成分类登记（全训 / 伴训 / 缓训 / 免训），服从编排；训练期间有特殊情况第一时间向教官或辅导员报备，不得无故缺勤或擅自离开场地。',
+ rel:['军训时间是什么时候？']},
+{k:['中暑','头晕','心慌','恶心','出虚汗','太热','难受','四肢乏力'],
+ a:'出现头晕、心慌、出虚汗、恶心、四肢乏力等中暑前兆：<wn>立刻停止训练</wn>，转移到阴凉通风处休息，补充电解质并做物理降温；情况严重第一时间联系校医处置。',
+ rel:['军训喝水有什么讲究？','心理难受能打哪个电话？']},
+{k:['喝水','补水','淡盐水','电解质','冰水','饮水'],
+ a:'补水原则：<b>少量多次</b>，出汗多时选淡盐水或电解质水；<wn>切忌一次性大量饮水，不要直接喝冰水</wn>。另外早餐一定要吃，谨防空腹训练低血糖。',
+ rel:['中暑了怎么办？']},
+{k:['崴脚','拉伤','受伤','扭伤','抽筋','揉','热敷','泡脚'],
+ a:'崴脚、肌肉拉伤要立即停止训练，<wn>切勿揉搓、热敷</wn>受伤部位；训练后别立刻蹲坐，缓步调整呼吸、适度拉伸防抽筋，晚间热水泡脚、轻柔按摩帮助恢复。',
+ rel:['中暑了怎么办？']},
+{k:['防晒','驱蚊','花露水','鞋垫','物资','军训用品','防晒霜','风油精'],
+ a:'军训物资清单：柔软吸汗的鞋垫防起泡；贴身衣物每日更换；防晒霜提前涂、定时补涂；备好花露水、驱蚊液；大容量水杯；训练后不要立刻冲冷水澡，优先温水洗浴。',
+ rel:['行李要带哪些？','军训时间是什么时候？']},
+
+/* —— 校园生活 —— */
+{k:['快递','取件','包裹','驿站','菜鸟','邮政'],
+ a:'指南里能确认的取件点：<br>① <b>泉山：</b>泉北快递中心（紧邻惠选超市，泉北生活区）；<br>② <b>文庭雅苑：</b>生活全能小集市地下负二层快递驿站。<br>具体快递公司分区以现场标识和辅导员通知为准，我不瞎编哦。',
+ rel:['超市在哪里？','文庭雅苑生活方便吗？']},
+{k:['超市','便利店','买东西','罗森','惠选','七星','购物','打印店'],
+ a:'<b>泉山：</b>罗森（美院与音院之间）、惠选（一食堂对面、泉北快递中心旁）、七星（一组团旁、校医院对面）、西校区超市（中俄学院附近）、集好购（34 号宿舍楼下）。<br><b>云龙：</b>超市在学生公寓 1-3# 楼侧，内部设有打印店。<br><b>文庭雅苑：</b>文享学街一层有 24 小时便利店、水吧、水果店。',
+ rel:['快递在哪里取？','公共浴室几点开放？']},
+{k:['浴室','洗澡','淋浴','澡堂','吹风机','洗衣机','洗浴','开放时间浴室'],
+ a:'泉山、云龙校区均配有公共浴室，恒温热水淋浴、独立更衣区，常规开放 <hl>12:00—22:40</hl>；公用吹风机、洗衣机及部分洗鞋机在各生活区均有覆盖。',
+ rel:['水电怎么缴费报修？']},
+{k:['报修','水电','缴费','后勤','维修','宿舍坏了','热水费','水电费'],
+ a:'水电缴费与报修通过「江苏师大后勤」公众号「微服务」菜单办理。文庭雅苑公寓客服时间 <hl>7:00—22:00</hl>，24 小时服务热线 <hl>0516-80801339</hl>。',
+ rel:['公共浴室几点开放？','文庭雅苑生活方便吗？']},
+{k:['校医院','医院','生病','看病','校医','诊所'],
+ a:'泉山校医院位于一组团旁七星连锁超市对面；医保报销可到「一站式」学生社区办理。军训或日常身体不适，第一时间联系辅导员/教官并就医，紧急情况拨打 120。',
+ rel:['一站式社区能办什么？']},
+{k:['校车','循环巴士','校内巴士','月票','校园公交','1元'],
+ a:'校内循环巴士每日 <hl>6:50—21:30</hl> 运行，票价 <hl>1 元/人次</hl>，可办月票享九折，支持微信、支付宝扫码支付。',
+ rel:['怎么坐地铁去火车站？']},
+{k:['地铁','火车站','高铁站','东站','徐州站','怎么去车站','师范大学站','中医院站','铜山中医院'],
+ a:'<b>泉山：</b>3 号线「师范大学站」近东南门（2 号门），直达徐州火车站；6 号线「铜山中医院站」近南门（3 号门），直达徐州东站和新城区奥体中心。<br><b>云龙：</b>紧邻 2 号线「师大云龙校区站」步行约 1 分钟，2 号线直达火车站，换 1 号线可达东站。<br><b>文庭雅苑：</b>紧邻 6 号线「徐州市中医院站」，直达东站，换 3 号线到火车站。',
+ rel:['校门口有哪些公交？','文庭雅苑到泉山的班车几点？']},
+{k:['公交','11附','19路','72路','95路','70路','64路','8路','49路','夜班'],
+ a:'<b>泉山东门（1 号门）：</b>11附、19 路往市中心及老火车站；72 路（含夜班）直达高铁东站；95 路连铜山新区。<br><b>云龙校区站：</b>11附、19 路往市中心及老火车站；70 路、64 路达客运北站；8 路、49 路串联老城区与宣武商圈。',
+ rel:['怎么坐地铁去火车站？']},
+{k:['文庭雅苑班车','通勤班车','校车时间','雅苑到泉山','班车'],
+ a:'2026—2027 学年秋季学期校际班车：<br><b>雅苑→泉山：</b>7:00、7:10、8:55、13:00、18:00；<br><b>泉山→雅苑：</b>12:15、17:30、17:35、21:10。',
+ rel:['校内循环巴士几点运行？']},
+{k:['爱师大','app','APP','课表','绩点','自习预约','门户','应用'],
+ a:'「爱师大」APP 是校园移动门户：课表查询、费用缴纳、校园卡服务、自习预约、绩点查询、校园导航都在工作台；绿色通道和勤工助学申请也在里面。电脑端下载：https://i-star.jsnu.edu.cn/ 。校园官网用爱师大账号登录，可选课、查考务，还能访问知网、万方等校内免费学术资源。',
+ rel:['教务系统怎么用？','绿色通道怎么申请？']},
+{k:['一站式','一站式社区','社区事务','社区服务站'],
+ a:'「一站式」学生社区服务攻略：<br>① <b>场地预约：</b>线上「爱师大」APP→智慧学工→场馆预约；线下提前一个工作日至前台填表；学院团队联系教 35 号楼 210 办公室（83656238），泉北舞蹈房/瑜伽室需到 34 号楼 B 栋一楼前台。<br>② <b>事务办理（工作日 12:00—18:00）：</b>泉南 117 室可办学生证补办、一卡通、医保报销（云龙在 4 号楼 317）；研究生学籍事务在泉北 34 号楼 B 栋一楼。<br>③ <b>自助服务（8:00—20:30）：</b>成绩单/在读证明自助打印、自助打印机、校园卡自助机、模拟面试厅。<br>④ <b>法律援助：</b>每周三 14:00—17:00，泉南 109 室。',
+ rel:['学生证怎么补办？','一卡通丢了怎么办？']},
+{k:['缝补','修自行车','眼镜清洗','微光','驿站','志愿','修车'],
+ a:'微光后勤温馨驿站在泉山校区南部蜜雪冰城对面，定期提供免费衣物缝补、自行车维修、眼镜清洗，关注「江苏师大后勤」公众号预约。',
+ rel:['水电怎么缴费报修？']},
+{k:['文庭雅苑','雅苑','文享学街','研享食集','小集市','文印','干洗'],
+ a:'文庭雅苑生活配置：<br>① <b>文享学街（一层）：</b>24 小时便利店、水吧、水果店；<br>② <b>生活全能小集市（负二层）：</b>快递驿站、生活超市、自助洗衣房、干洗店、文印室；<br>③ <b>研享食集（二层）：</b>风味美食集合地。<br>公寓客服 7:00—22:00，24h 热线 0516-80801339。',
+ rel:['文庭雅苑到泉山的班车几点？','快递在哪里取？']},
+
+/* —— 食堂 —— */
+{k:['食堂','餐厅','吃什么','好吃','美食','饭菜','就餐','几个食堂'],
+ a:'泉山有一到七食堂（玉泉河、忆江南美食广场、玉兰融合餐厅等），云龙有 A 级认证的云龙学生食堂。人气推荐：一食堂鸭血粉丝汤、朱家小馆辣肉面；二食堂地锅鸡、设共享厨房；三食堂燃面、脆皮烤鸭和<hl>五元套餐</hl>；忆江南有麦当劳；六食堂有瑞幸；七食堂品牌连锁最多。拿不准就去玩「食堂美食」分区里的「今天吃什么」翻牌～',
+ rel:['五元套餐在哪个食堂？','共享厨房怎么用？']},
+{k:['五元','5元','便宜','套餐','性价比'],
+ a:'三食堂是性价比之王：<hl>「五元套餐」一荤一素、米饭不限量</hl>；燃面、脆皮烤鸭、胖姐米线、瓦罐汤、麻辣烫也都在三食堂，而且三食堂也设有共享厨房。',
+ rel:['哪个食堂好吃？']},
+{k:['共享厨房','做饭','自己下厨','厨房预约'],
+ a:'二食堂（玉泉河餐厅）和三食堂都设有共享厨房，周内及周末可预约使用，具体预约方式以后勤公众号发布的预约推文为准。',
+ rel:['食堂都有哪些好吃的？']},
+{k:['麦当劳','瑞幸','咖啡','奶茶','蜜雪','幸运咖','连锁','汉堡','糕点'],
+ a:'校内连锁品牌地图：麦当劳在忆江南美食广场；瑞幸咖啡和现做糕点在六食堂（玉兰融合餐厅）；蜜雪冰城在一食堂（泉山南部微光驿站对面也有一家）；幸运咖、蜜城之恋、柿子下午茶在七食堂；0090 汉堡在二食堂。',
+ rel:['食堂都有哪些好吃的？']},
+{k:['云龙吃','云龙食堂','云龙有什么吃'],
+ a:'云龙学生食堂是 A 级认证食堂：一楼有精品快餐、徐州风味米线、烤肉饭、麻辣烫、兰州拉面；二楼有特色小炒、烤鸭饭、猪脚饭、卤肉。身处市中心，价格亲民。',
+ rel:['校外有什么好吃的？']},
+{k:['校外','步行街','万达','富国街','彭城广场','火锅','小吃街','下馆子'],
+ a:'校外觅食：师大步行街烟火气十足；铜山万达热闹丰富；市中心富国街、彭城广场一带特色小吃、火锅烤肉一应俱全。聚餐记得错峰、注意保管随身物品。',
+ rel:['食堂都有哪些好吃的？']},
+
+/* —— 学习 —— */
+{k:['图书馆','借书','借阅','敬文','牛山','智华','开馆','续借','还书'],
+ a:'三馆分布：泉山敬文图书馆邻近东门、馆藏最全；牛山图书馆紧邻泉西宿舍区、自习座位充足；云龙智华图书馆服务云龙校区。日常开放 <hl>7:00—22:00</hl>（节假日以通知为准）。本科生可借 <hl>15 册、借期 30 天</hl>，可线上续借一次、最长不超 60 天，支持跨校区通借通还；期刊、古籍、工具书仅限馆内阅览。',
+ rel:['自习室去哪里？']},
+{k:['自习','自习室','空教室','学习的地方','哪里学习','自习预约'],
+ a:'自习去处：<br>① <b>「一站式」学生社区：</b>泉南、泉西、泉北 34 号楼 B/C 栋、云龙 4 号楼，开放 8:00—20:30，可在「爱师大 APP—智慧学工—场馆预约」预约；<br>② <b>空教室：</b>东教区（7#、8#、17#）、西教区（31#、42# 等）开放无课空教室，文庭雅苑公寓也有配套自习教室，可通过教学资源查询预约平台查看。',
+ rel:['图书馆怎么借书？','爱师大APP有什么用？']},
+{k:['教务系统','选课','成绩','学习通','慕课','MOOC','网课','课件','签到','期末'],
+ a:'学习平台三件套：<br>① <b>教务系统：</b>学号+密码登录，可选课（体育、博雅等）、查成绩与课表；<br>② <b>爱师大 APP：</b>「学在师大」查课表和期末成绩，「科学研究」提供文献工具；<br>③ <b>网课：</b>中国大学 MOOC（icourse163.org）有本校课程视频；学习通用于课件、签到、章节任务与作业考试。',
+ rel:['有没有好的学习方法建议？']},
+{k:['学习方法','怎么学','预习','笔记','听课','复习','大学学习','学不进去','状态不好'],
+ a:'四步学习法：<br>① <b>课前：</b>10 分钟浏览章节标题和重点概念，标记疑问；<br>② <b>课中：</b>坐前排、手机收起，记框架、例题和老师反复强调的重点，保存课程 PPT；<br>③ <b>课后：</b>当天整理笔记、复盘重难点，别积压到期末；<br>④ <b>答疑：</b>及时请教任课教师或学长学姐。',
+ rel:['自习室去哪里？','学习状态怎么调整？']},
+{k:['晨读','奖学金学习','学风','十佳','朱敬文','榜样'],
+ a:'学风品牌活动有「暖冬晨读」「春晓晨读」；荣誉体系包括学风建设「十佳百优」、立德树人奖学金、朱敬文奖学金，以及「十佳班级」「苏师榜样」等评选。',
+ rel:['奖学金有哪些？']},
+
+/* —— 奖助 —— */
+{k:['绿色通道','先报到','交不起学费','凑不齐','暂时没学费','延后缴费'],
+ a:'绿色通道可以「先报到、后缴费」：报到前暂未凑齐学费、住宿费，登录「爱师大」APP「欢迎新同学」板块线上申请即可；入学后学校会组织家庭经济困难学生认定。',
+ rel:['助学贷款怎么办？','还有别的资助政策吗？']},
+{k:['助学贷款','生源地','贷款','贷款额度','贷款利息','开发银行','学费贷款'],
+ a:'生源地国家助学贷款办理要点：<br>① <b>时间地点：</b>每年 <hl>7—9 月</hl>到<hl>户籍所在地教育局学生资助中心</hl>办理；<br>② <b>额度：</b>本专科生每人每年最高 <hl>20000 元</hl>，研究生最高 25000 元；<br>③ <b>利息：</b>在校期间全部由国家财政承担，期限学制加 15 年、最长不超 22 年；<br>④ 资金优先缴学费住宿费，也可补贴生活费。',
+ rel:['资助中心电话是多少？','绿色通道怎么申请？']},
+{k:['奖学金','国家奖学金','励志','评优','奖项'],
+ a:'学校设有多层次奖学金体系，表彰勤学善思、品行端正、综合素养突出的优秀学子；另有立德树人奖学金、朱敬文奖学金，以及「十佳百优」「苏师榜样」等学风荣誉。入学后留意学生手册和学院通知的评选条件。',
+ rel:['勤工助学怎么申请？']},
+{k:['勤工助学','兼职','打工','时薪','岗位','助学岗位'],
+ a:'勤工助学面向大二及以上学有余力的建档学生，有图书馆助理、行政助理等岗位：薪酬 <hl>14 元/小时</hl>，每月不超过 <hl>40 小时</hl>，单月上限 <hl>560 元</hl>，登录「爱师大」APP 申请。提醒：社会上的刷单返利「兼职」全是诈骗。',
+ rel:['助学贷款怎么办？']},
+{k:['学费减免','临时困难补助','突发','家庭变故','重病','孤儿','残疾学生','减免'],
+ a:'特殊困难有两条通道：<br>① <b>学费减免：</b>残疾学生、孤儿、因公牺牲人员子女、重病学生等可申请；<br>② <b>临时困难补助：</b>在校遇突发疾病、家庭变故等意外可申请，全年畅通、快速审批。先联系学院资助辅导员。',
+ rel:['资助中心电话是多少？']},
+{k:['入伍','退役','军士','兵役','参军','基层就业','学费补偿','代偿','苏北'],
+ a:'专项资助两类：<br>① <b>服兵役教育资助：</b>应征入伍、招收为军士、退役复学（入学）享学费补偿、贷款代偿或学费减免，本专科生每年最高 20000 元、研究生 25000 元；<br>② <b>基层就业补偿：</b>应届毕业生到苏北基层岗位连续就业满 <hl>36 个月</hl>，可申请学费补偿贷款代偿。',
+ rel:['助学贷款怎么办？']},
+{k:['资助电话','资助中心','咨询电话','83656248','资助咨询'],
+ a:'资助政策咨询：党委学生工作部学生资助管理中心 <hl>0516-83656248</hl>，也可以联系本学院资助辅导员。',
+ rel:['助学贷款怎么办？','绿色通道怎么申请？']},
+{k:['苏师夜校','宏志','发展型','成长计划','一平方','苏师大集','访学','资助政策','其他资助','别的资助','资助项目'],
+ a:'除了经济资助还有发展型资助育人项目：「苏师夜校」「宏志助航计划」「一平方希望市集」「励志成长计划」「苏师大集」等，提供技能培训、访学交流、心理关怀、学业帮扶和公益实践资源。',
+ rel:['还有别的资助政策吗？']},
+
+/* —— 心理 —— */
+{k:['心理咨询','预约咨询','心理中心','32号楼','心育','在哪咨询','心理咨询室'],
+ a:'咨询预约方式：<br>① <b>电话：</b><hl>0516-83656258</hl>；<br>② <b>现场：</b>泉山校区学生心理健康教育与咨询中心预约室（32 号楼 1 楼）。<br>咨询时段（2026.9.14—2027.1.1，周一至周五）：8:00—12:00、14:00—17:00、18:00—20:00。面询地点：泉山教 32 号楼 3 楼；云龙服务站 4 号楼 109 室。<b>保密是首要原则。</b>',
+ rel:['24小时心理热线是多少？','心情很差怎么办？']},
+{k:['心理热线','热线','电话','想哭','崩溃','抑郁','焦虑','撑不住','睡不着','失眠','压力大','难受','烦','孤独','情绪','心情','自卑','内耗'],
+ a:'想找人说话时，这些电话 24 小时都通：<br>① <b>江苏师范大学阳光心理热线：</b><hl>19852059689</hl>（每天 0:00—24:00）；<br>② <b>全国统一心理援助热线：</b><hl>12356</hl>；<br>③ <b>江苏省大学生 24h 心理热线：</b>025-58255200（苏心门户小程序「我在你说」板块）。<br>面询可预约 0516-83656258（泉山 32 号楼 / 云龙 4-109）。求助不是软弱，是聪明的选择。',
+ rel:['心理咨询怎么预约？','军训期间心理压力大怎么办？']},
+{k:['保密','隐私','别人知道','安全吗'],
+ a:'心理咨询的首要原则就是<b>保密</b>：你的咨询内容会被严格保密，可以安心倾诉。只有在你或他人的安全面临紧迫危险等极少数法定情形下，才会按专业规程突破保密，而且目的也是保护你。',
+ rel:['心理咨询怎么预约？']},
+
+/* —— 入学教育 —— */
+{k:['入学教育','三阶段','蓄能','固本','致远','主题','怀远志','开学教育','教育安排'],
+ a:'2026 级入学教育主题为「怀远志 · 展新程」，分三阶段：<br>① <b>蓄能教育（报到前）：</b>线上启蒙，未到校先入班、未谋面先交流、未入学先引导；<br>② <b>固本教育（报到—9 月 30 日）：</b>借迎新、军训完成身份与思想转换；<br>③ <b>致远教育（10 月 1 日—12 月初）：</b>学业导航、生涯规划、生命健康与心理普测、榜样分享。',
+ rel:['入学教育有哪些内容？','军训几号开始？']},
+{k:['八大教育','教育内容','理想信念','国防教育','爱校','专业认知','防诈教育','基础文明','生涯规划','生命健康'],
+ a:'八大教育内容：① 理想信念教育；② 国防教育（军训为抓手）；③ 爱校荣校教育；④ 专业认知教育；⑤ 安全与防诈教育；⑥ 基础文明教育（学生手册、宿舍文明、感恩励志）；⑦ 生涯规划教育（考研、基层就业、参军、双创）；⑧ 生命健康教育（心理调适与咨询援助渠道）。',
+ rel:['防骗三原则是什么？','24小时心理热线是多少？']},
+
+/* —— 小慧自身 —— */
+{k:['你是谁','你叫什么','小慧是谁','你能做什么','你会什么','功能','介绍下你','智能体'],
+ a:'我是小慧，你的校园向导学姐～我的大脑里装着「初见·苏师」官方新生指南：入学准备、军训、校园生活、食堂、学习、奖助、心理、入学教育、社区事务九大分区都能问。答不上来的我绝不瞎编，会建议你找辅导员或学校官方渠道确认。',
+ rel:['军训几号开始？','助学贷款怎么办？']},
+{k:['你好','您好','在吗','嗨','hello','hi','早上好','晚上好','谢谢','感谢'],
+ a:'你好呀，我是小慧～ 不管是抢票、军训防晒、食堂翻牌还是助学贷款，尽管问我。愿你在苏师的每一天都安心又有收获！',
+ rel:['今天食堂吃什么？','24小时心理热线是多少？']},
+{k:['学生证','学生证补办','学生证丢了','补学生证'],
+ a:'学生证补办：泉南「一站式」117 室（校医院东南侧），工作日 12:00—18:00。流程：①「爱师大」APP → 工作台 → 服务大厅 → 提交学生证补办申请；② 备好一寸照片，填写班级、姓名等信息交给值班人员；③ 通过支付宝生活号「江苏师范大学计划财务处」缴费；④ 加入对应通知群等待通知。',
+ rel:['一卡通丢了怎么办？','一站式社区都能办什么？']},
+{k:['一卡通','校园卡','补卡','挂失','门禁','黑户','饭卡'],
+ a:'一卡通业务在泉南「一站式」117 室办理（工作日 12:00—18:00）：补办需余额 ≥20 元，向工作人员报卡号、核对信息登记后打印新卡；挂失、解绑可在「爱师大—工作台—校园卡」线上办或找值班人员。若无法刷门禁、显示黑户、无法刷卡付钱、刷脸进不了图书馆、账单异常，请到综合楼二楼卡务中心（一食堂东隔壁、惠选校园超市二楼）。',
+ rel:['学生证怎么补办？','医保怎么报销？']},
+{k:['医保','医保报销','门诊','住院','转诊单'],
+ a:'医保报销（工作日 12:00—18:00）：泉南「一站式」117 室（泉山）或 4 号楼 317 办公室（云龙）。门诊需转诊单、发票明细、病历、身份证正反面复印件；住院需住/出院证明（带医院盖章）、发票及明细、银行卡复印件、身份证正反面复印件。',
+ rel:['一站式社区都能办什么？']},
+{k:['成绩单','在读证明','证明打印','自助打印','自助打印机','打印成绩单'],
+ a:'成绩单/在读证明自助打印：泉山在泉南、泉北「一站式」B 栋（8:00—20:30，节假日另行通知）；云龙在 4 号楼一楼（全天开放）。流程：选登录方式（密码为身份证后六位）→ 选成绩单类型和份数 → 校园卡支付（首次使用前两份免费）→ 打印成功。另有自助打印机（黑白+彩印）在泉南 117 室。',
+ rel:['一站式社区都能办什么？']},
+{k:['场地预约','场馆预约','舞蹈房','瑜伽室','模拟面试','预约场地'],
+ a:'场地预约：① 线上——「爱师大」APP → 智慧学工 → 场馆预约 → 个人预约 → 选场地；② 线下——提前一个工作日到前台填表，值班人员核对即可。学院团队可联系教 35 号楼 210 办公室乔子芮老师，电话 83656238；泉北舞蹈房与瑜伽室需到 34 号宿舍楼 B 栋一楼前台办理；模拟面试厅在泉南 117 室对面。',
+ rel:['一站式社区都能办什么？','爱师大APP有什么用？']},
+{k:['法律援助','法援','法律咨询'],
+ a:'法律援助：每周三 14:00—17:00（节假日另行通知），泉南「一站式」学生社区 109 室（108 室内侧）。',
+ rel:['一站式社区都能办什么？']},
+{k:['社区活动','活动预告','苏师学工','玉泉心语','社工服务','出国留学咨询'],
+ a:'「一站式」学生社区常态化开设网络服务、社工服务、出国留学、心理健康等专题咨询；活动资讯关注「苏师学工」「玉泉心语」微信公众号。社区前台全天候提供事务咨询，也欢迎反馈意见建议。',
+ rel:['一站式社区都能办什么？']}
+];
+
+/* 危机关键词：最高优先级 */
+var CRISIS_RE=/不想活|想死|自杀|活不下去|结束生命|自残|轻生|不想存在|了断|割腕|跳楼/;
+/* 诈骗相关提问：回答时追加防骗卡 */
+var FRAUD_RE=/转账|汇款|验证码|银行卡密码|屏幕共享|刷单|贷款|助学金|退款|客服|收费|手续费|保证金/;
+
+/* 匹配：命中关键词计分，长词权重高 */
+function findAnswer(q){
+  var best=null,score=0;
+  for(var i=0;i<KB.length;i++){
+    var s=0,e=KB[i];
+    for(var j=0;j<e.k.length;j++){
+      if(q.indexOf(e.k[j])>=0)s+=e.k[j].length>=3?2:1;
+    }
+    if(s>score){score=s;best=e;}
+  }
+  return best;
+}
+
+/* ===== 聊天渲染 ===== */
+function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function bubble(who,html){
+  var d=document.createElement('div');d.className='msg '+who;
+  d.innerHTML=(who==='bot'?'<div class="avatar">'+mimg('')+'</div>':'')
+    +'<div class="bubble">'+html+'</div>';
+  el('chat-body').appendChild(d);
+  el('chat-body').scrollTop=el('chat-body').scrollHeight;
+  return d;
+}
+function typing(){
+  var d=document.createElement('div');d.className='msg bot';d.id='typing-row';
+  d.innerHTML='<div class="avatar">'+mimg('')+'</div><div class="bubble"><span class="typing"><i></i><i></i><i></i></span></div>';
+  el('chat-body').appendChild(d);
+  el('chat-body').scrollTop=el('chat-body').scrollHeight;
+}
+function untype(){var t=el('typing-row');if(t)t.parentNode.removeChild(t);}
+
+function setSend(on){el('chat-send').disabled=!on;if(on)el('chat-q').focus();}
+
+function askBot(raw){
+  var q=(raw||el('chat-q').value);
+  q=(q||'').replace(/\s+/g,'').trim();
+  if(!q)return;
+  el('chat-q').value='';
+  bubble('user',esc(q));
+  setSend(false);
+  typing();
+  setTimeout(function(){
+    untype();
+    var html='';
+    if(CRISIS_RE.test(q)){
+      html='先谢谢你愿意把这么难的感受说出来。你现在的安全最重要，请<hl>不要独处</hl>，立刻联系一个你信任的人，或直接拨打：<br>· 校内 24h 阳光心理热线 <hl>19852059689</hl><br>· 全国统一心理援助热线 <hl>12356</hl><br>· 紧急危险拨打 <hl>120 / 110</hl><br>也可以马上到泉山 32 号楼心理中心或就近找辅导员、宿管。'+CARE;
+      bubble('bot',html);
+    }else{
+      var e=findAnswer(q);
+      if(!e){
+        var tips=['快递在哪里取？','军训几号开始？','助学贷款怎么办？','24小时心理热线是多少？'];
+        html='这个问题我在官方指南里没找到确切答案，就不瞎编啦～你可以换个问法，或咨询辅导员/学校官方通知。先试试这些：'
+          +'<div class="rbox"><div class="rt">大家常问：</div>'+tips.map(function(t){return '<span class="rchip" onclick="goAsk(\''+t+'\')">'+t+'</span>';}).join('')+'</div>';
+      }else{
+        html=e.a;
+        if(FRAUD_RE.test(q)&&html.indexOf('warn-card')<0)html+=WARN;
+        if(e.rel&&e.rel.length){
+          html+='<div class="rbox"><div class="rt">你可能还想问：</div>'
+            +e.rel.map(function(t){return '<span class="rchip" onclick="goAsk(\''+t+'\')">'+t+'</span>';}).join('')+'</div>';
+        }
+      }
+      bubble('bot',html);
+    }
+    setSend(true);
+  },520);
+}
+function goAsk(q){el('chat-q').value=q;askBot(q);}
+
+/* ===== 图集灯箱 & 回到顶部 ===== */
+function openLbox(src,cap){el('lbox-img').src=src;el('lbox-cap').textContent=cap||'';el('lbox').classList.add('show');document.body.style.overflow='hidden';}
+function closeLbox(){el('lbox').classList.remove('show');el('lbox-img').src='';document.body.style.overflow='';}
+function bindChrome(){
+  el('lbox').addEventListener('click',function(ev){if(ev.target===this||ev.target.id==='lbox-x')closeLbox();});
+  document.addEventListener('keydown',function(ev){if(ev.key==='Escape')closeLbox();});
+  var tt=el('to-top');
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  window.addEventListener('scroll',function(){if(window.scrollY>640)tt.classList.add('show');else tt.classList.remove('show');});
+}
+
+/* ===== 初始化 ===== */
+var QUICK=['军训几号开始？','助学贷款怎么办？','五元套餐在哪个食堂？','快递在哪里取？','24小时心理热线是多少？'];
+function chipHTML(t){return '<span class="rchip" onclick="goAsk(\''+t+'\')">'+t+'</span>';}
+
+function init(){
+  renderNav();
+  bindChrome();
+  el('ac-chips').innerHTML=QUICK.slice(0,4).map(function(t){
+    return '<button type="button" class="ac-chip" onclick="openChat();goAsk(\''+t+'\')">'+t+'</button>';
+  }).join('');
+  el('chat-chips').innerHTML=QUICK.map(function(t){
+    return '<button type="button" class="cchip" onclick="goAsk(\''+t+'\')">'+t+'</button>';
+  }).join('');
+
+  el('btn-enter').addEventListener('click',function(){
+    el('view-cover').classList.add('cover-leave');
+    setTimeout(function(){
+      show('view-nav');
+      el('view-cover').classList.remove('cover-leave');
+    },380);
+  });
+  el('btn-back').addEventListener('click',function(){show('view-nav');});
+  el('btn-chat-back').addEventListener('click',function(){show('view-nav');});
+  el('ac-go').addEventListener('click',openChat);
+
+  el('chat-send').addEventListener('click',function(){askBot();});
+  el('chat-q').addEventListener('keydown',function(ev){if(ev.key==='Enter')askBot();});
+
+  bubble('bot','你好呀，我是小慧，你的校园向导～<br>九大分区的问题都可以问我：车票预约、军训防护、快递食堂、奖助贷、心理热线……答不上来我绝不瞎编。'
+    +'<div class="rbox"><div class="rt">试试问我：</div>'+QUICK.slice(0,3).map(chipHTML).join('')+'</div>');
+}
+function openChat(){show('view-chat');setTimeout(function(){el('chat-q').focus();},100);}
+
+init();
+
+</script>
+</body>
+</html>
